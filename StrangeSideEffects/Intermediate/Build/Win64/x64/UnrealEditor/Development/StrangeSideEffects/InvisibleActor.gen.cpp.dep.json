@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\unrealeditor\\inc\\strangesideeffects\\uht\\invisibleactor.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\x64\\strangesideeffectseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\strangesideeffects\\definitions.strangesideeffects.h",
+            "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\source\\strangesideeffects\\public\\invisibleactor.h",
+            "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\unrealeditor\\inc\\strangesideeffects\\uht\\invisibleactor.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

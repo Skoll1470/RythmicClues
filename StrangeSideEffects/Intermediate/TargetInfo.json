@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "StrangeSideEffects",
+			"Path": "..\\Source\\StrangeSideEffects.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "StrangeSideEffectsEditor",
+			"Path": "..\\Source\\StrangeSideEffectsEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
