@@ -7,11 +7,23 @@
 #include "Logging/LogMacros.h"
 #include "StrangeSideEffectsCharacter.generated.h"
 
+UENUM(BlueprintType)
+enum class ESideEffectToApply : uint8
+{
+	ESETA_Small UMETA(DisplayName = "Small"),
+	ESETA_Speed UMETA(DisplayName = "Speed"),
+	ESETA_Float UMETA(DisplayName = "Float"),
+	ESETA_Visible UMETA(DisplayName = "Visible"),
+	ESETA_Clear UMETA(DisplayName = "Clear")
+};
+
 class USpringArmComponent;
 class UCameraComponent;
 class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
+class UAnimMontage;
+
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
@@ -60,11 +72,20 @@ class AStrangeSideEffectsCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* VisibilityAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Animation, meta = (AllowPrivateAccess = "true"))
+	UAnimMontage* DrinkingMontage = nullptr;
+
 public:
 	AStrangeSideEffectsCharacter();
 	
 	//Getter for the IsSeeingInvisible Variable
 	bool GetIsSeeingInvisible();
+
+	void SetDrinkingState(bool NewDrinkingState);
+
+	void ApplySideEffect();
+
+	void SetEnumSideEffectToApply(ESideEffectToApply NewEnum);
 
 protected:
 
@@ -85,7 +106,8 @@ protected:
 
 	/** Called for Seeing Invisible Input*/
 	void Visibility(const FInputActionValue& Value);
-			
+
+	void PlayDrinkingMontage();
 
 protected:
 	// APawn interface
@@ -113,5 +135,9 @@ private:
 
 	//Variable indicating if the Player is Seeing the Invisible
 	bool IsSeeingInvisible = false;
+
+	bool IsDrinking = false;
+
+	ESideEffectToApply EnumSideEffectToApply = ESideEffectToApply::ESETA_Clear;
 };
 

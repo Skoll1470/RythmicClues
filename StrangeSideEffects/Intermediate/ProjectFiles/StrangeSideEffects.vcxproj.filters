@@ -58,12 +58,18 @@
     <Filter Include="Source\StrangeSideEffects\Private">
       <UniqueIdentifier>{41935BFC-9228-3747-8F4F-8BEF72D12C4A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\StrangeSideEffects\Private\ApplySideEffectNotify.cpp">
+      <Filter>Source\StrangeSideEffects\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\InvisibleActor.cpp">
       <Filter>Source\StrangeSideEffects\Private</Filter>
     </ClCompile>
     <Filter Include="Source\StrangeSideEffects\Public">
       <UniqueIdentifier>{6F32545F-3684-3A94-B9EC-89A3E50030D4}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\StrangeSideEffects\Public\ApplySideEffectNotify.h">
+      <Filter>Source\StrangeSideEffects\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\InvisibleActor.h">
       <Filter>Source\StrangeSideEffects\Public</Filter>
     </ClInclude>

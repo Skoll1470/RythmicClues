@@ -2,6 +2,7 @@
 
 #include "StrangeSideEffectsCharacter.h"
 #include "Engine/LocalPlayer.h"
+#include "Animation/AnimMontage.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -57,6 +58,11 @@ AStrangeSideEffectsCharacter::AStrangeSideEffectsCharacter()
 bool AStrangeSideEffectsCharacter::GetIsSeeingInvisible()
 {
 	return IsSeeingInvisible;
+}
+
+void AStrangeSideEffectsCharacter::SetDrinkingState(bool NewDrinkingState)
+{
+	IsDrinking = NewDrinkingState;
 }
 
 void AStrangeSideEffectsCharacter::BeginPlay()
@@ -115,7 +121,7 @@ void AStrangeSideEffectsCharacter::Move(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
-	if (Controller != nullptr)
+	if (Controller != nullptr && !IsDrinking)
 	{
 		// find out which way is forward
 		const FRotator Rotation = Controller->GetControlRotation();
@@ -150,6 +156,42 @@ void AStrangeSideEffectsCharacter::Small(const FInputActionValue& Value)
 {
 	if (Controller != nullptr)
 	{
+		PlayDrinkingMontage();
+		EnumSideEffectToApply = ESideEffectToApply::ESETA_Small;
+	}
+}
+
+void AStrangeSideEffectsCharacter::Speed(const FInputActionValue& Value)
+{
+	if (Controller != nullptr)
+	{
+		PlayDrinkingMontage();
+		EnumSideEffectToApply = ESideEffectToApply::ESETA_Speed;
+	}
+}
+
+void AStrangeSideEffectsCharacter::Float(const FInputActionValue& Value)
+{
+	if (Controller != nullptr)
+	{
+		PlayDrinkingMontage();
+		EnumSideEffectToApply = ESideEffectToApply::ESETA_Float;
+	}
+}
+
+void AStrangeSideEffectsCharacter::Visibility(const FInputActionValue& Value)
+{
+	if (Controller != nullptr)
+	{
+		PlayDrinkingMontage();
+		EnumSideEffectToApply = ESideEffectToApply::ESETA_Visible;
+	}
+}
+
+void AStrangeSideEffectsCharacter::ApplySideEffect()
+{
+	if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Small)
+	{
 		if (!IsSmall)
 		{
 			GetCapsuleComponent()->SetWorldScale3D(FVector(0.5f, 0.5f, 0.5f));
@@ -166,32 +208,34 @@ void AStrangeSideEffectsCharacter::Small(const FInputActionValue& Value)
 		}
 		IsSmall = !IsSmall;
 	}
-}
-
-void AStrangeSideEffectsCharacter::Speed(const FInputActionValue& Value)
-{
-	if (Controller != nullptr)
+	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Speed)
 	{
 		float NewMaxWalkSpeed = !IsSpeed ? 1000.f : 500.f;
 		GetCharacterMovement()->MaxWalkSpeed = NewMaxWalkSpeed;
 		IsSpeed = !IsSpeed;
 	}
-}
-
-void AStrangeSideEffectsCharacter::Float(const FInputActionValue& Value)
-{
-	if (Controller != nullptr)
+	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Float)
 	{
 		float NewGravityScale = !IsFloating ? 0.5f : 1.f;
 		GetCharacterMovement()->GravityScale = NewGravityScale;
 		IsFloating = !IsFloating;
 	}
-}
-
-void AStrangeSideEffectsCharacter::Visibility(const FInputActionValue& Value)
-{
-	if (Controller != nullptr)
+	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Visible)
 	{
 		IsSeeingInvisible = !IsSeeingInvisible;
+	}
+}
+
+void AStrangeSideEffectsCharacter::SetEnumSideEffectToApply(ESideEffectToApply NewEnum)
+{
+	EnumSideEffectToApply = NewEnum;
+}
+
+void AStrangeSideEffectsCharacter::PlayDrinkingMontage()
+{
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance && DrinkingMontage)
+	{
+		AnimInstance->Montage_Play(DrinkingMontage, 1.f, EMontagePlayReturnType::MontageLength, 0.f, true);
 	}
 }
