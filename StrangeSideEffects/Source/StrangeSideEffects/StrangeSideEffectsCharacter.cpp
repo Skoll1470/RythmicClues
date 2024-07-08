@@ -11,6 +11,8 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "NiagaraComponent.h"
+#include "PotionActor.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -53,6 +55,16 @@ AStrangeSideEffectsCharacter::AStrangeSideEffectsCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+	// Create Particle Effects
+	SmallEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("SmallParticleEffect"));
+	SmallEffect->SetupAttachment(GetRootComponent());
+	SpeedEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("SpeedParticleEffect"));
+	SpeedEffect->SetupAttachment(GetRootComponent());
+	FloatEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("FloatParticleEffect"));
+	FloatEffect->SetupAttachment(GetRootComponent());
+	VisibilityEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("VisibilityParticleEffect"));
+	VisibilityEffect->SetupAttachment(GetRootComponent());
 }
 
 bool AStrangeSideEffectsCharacter::GetIsSeeingInvisible()
@@ -69,6 +81,12 @@ void AStrangeSideEffectsCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+
+	// Deactivate all Particle Effects
+	SmallEffect->Deactivate();
+	SpeedEffect->Deactivate();
+	FloatEffect->Deactivate();
+	VisibilityEffect->Deactivate();
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -190,6 +208,10 @@ void AStrangeSideEffectsCharacter::Visibility(const FInputActionValue& Value)
 
 void AStrangeSideEffectsCharacter::ApplySideEffect()
 {
+	if (PotionActor)
+	{
+		PotionActor->Destroy();
+	}
 	if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Small)
 	{
 		if (!IsSmall)
@@ -198,6 +220,7 @@ void AStrangeSideEffectsCharacter::ApplySideEffect()
 			GetMesh()->SetWorldScale3D(FVector(0.5f, 0.5f, 0.5f));
 			GetMesh()->SetClothMaxDistanceScale(0.1f);
 			CameraBoom->TargetArmLength = 200.0f;
+			SmallEffect->Activate();
 		}
 		else
 		{
@@ -205,23 +228,50 @@ void AStrangeSideEffectsCharacter::ApplySideEffect()
 			GetMesh()->SetWorldScale3D(FVector(1.0, 1.0f, 1.0f));
 			GetMesh()->SetClothMaxDistanceScale(1.0f);
 			CameraBoom->TargetArmLength = 400.0f;
+			SmallEffect->Deactivate();
 		}
 		IsSmall = !IsSmall;
 	}
 	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Speed)
 	{
-		float NewMaxWalkSpeed = !IsSpeed ? 1000.f : 500.f;
+		float NewMaxWalkSpeed = 500.f;
+		if (!IsSpeed)
+		{
+			NewMaxWalkSpeed = 1000.f;
+			SpeedEffect->Activate();
+		}
+		else
+		{
+			SpeedEffect->Deactivate();
+		}
 		GetCharacterMovement()->MaxWalkSpeed = NewMaxWalkSpeed;
 		IsSpeed = !IsSpeed;
 	}
 	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Float)
 	{
-		float NewGravityScale = !IsFloating ? 0.5f : 1.f;
+		float NewGravityScale = 1.5f;
+		if (!IsFloating)
+		{
+			NewGravityScale = 0.5f;
+			FloatEffect->Activate();
+		}
+		else
+		{
+			FloatEffect->Deactivate();
+		}
 		GetCharacterMovement()->GravityScale = NewGravityScale;
 		IsFloating = !IsFloating;
 	}
 	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Visible)
 	{
+		if (!IsSeeingInvisible)
+		{
+			VisibilityEffect->Activate();
+		}
+		else
+		{
+			VisibilityEffect->Deactivate();
+		}
 		IsSeeingInvisible = !IsSeeingInvisible;
 	}
 }
@@ -237,5 +287,12 @@ void AStrangeSideEffectsCharacter::PlayDrinkingMontage()
 	if (AnimInstance && DrinkingMontage)
 	{
 		AnimInstance->Montage_Play(DrinkingMontage, 1.f, EMontagePlayReturnType::MontageLength, 0.f, true);
+	}
+	if (PotionMesh)
+	{
+		PotionActor = GetWorld()->SpawnActor<APotionActor>();
+		PotionActor->StaticMesh->SetStaticMesh(PotionMesh);
+		FAttachmentTransformRules TransformRules(EAttachmentRule::SnapToTarget, true);
+		PotionActor->StaticMesh->AttachToComponent(GetMesh(), TransformRules, FName("PotionSocket"));
 	}
 }

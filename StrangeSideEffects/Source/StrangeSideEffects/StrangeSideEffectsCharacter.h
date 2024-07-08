@@ -23,6 +23,8 @@ class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
 class UAnimMontage;
+class UNiagaraComponent;
+class APotionActor;
 
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
@@ -74,6 +76,21 @@ class AStrangeSideEffectsCharacter : public ACharacter
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Animation, meta = (AllowPrivateAccess = "true"))
 	UAnimMontage* DrinkingMontage = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = ParticleEffects, meta = (AllowPrivateAccess = "true"))
+	UNiagaraComponent* SmallEffect = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = ParticleEffects, meta = (AllowPrivateAccess = "true"))
+	UNiagaraComponent* SpeedEffect = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = ParticleEffects, meta = (AllowPrivateAccess = "true"))
+	UNiagaraComponent* FloatEffect = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = ParticleEffects, meta = (AllowPrivateAccess = "true"))
+	UNiagaraComponent* VisibilityEffect = nullptr;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Potion, meta = (AllowPrivateAccess = "true"))
+	UStaticMesh* PotionMesh = nullptr;
 
 public:
 	AStrangeSideEffectsCharacter();
@@ -139,5 +156,7 @@ private:
 	bool IsDrinking = false;
 
 	ESideEffectToApply EnumSideEffectToApply = ESideEffectToApply::ESETA_Clear;
+
+	APotionActor* PotionActor = nullptr;
 };
 
