@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeStrangeSideEffects_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xD50EFF4C,
-				0xE7F39DA5,
+				0x58B20247,
+				0x0B177CDA,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_StrangeSideEffects.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_StrangeSideEffects.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_StrangeSideEffects(Z_Construct_UPackage__Script_StrangeSideEffects, TEXT("/Script/StrangeSideEffects"), Z_Registration_Info_UPackage__Script_StrangeSideEffects, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD50EFF4C, 0xE7F39DA5));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_StrangeSideEffects(Z_Construct_UPackage__Script_StrangeSideEffects, TEXT("/Script/StrangeSideEffects"), Z_Registration_Info_UPackage__Script_StrangeSideEffects, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x58B20247, 0x0B177CDA));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

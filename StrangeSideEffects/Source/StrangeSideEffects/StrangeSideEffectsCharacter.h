@@ -25,6 +25,7 @@ struct FInputActionValue;
 class UAnimMontage;
 class UNiagaraComponent;
 class APotionActor;
+class AStrangeSideEffectsHUD;
 
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
@@ -96,6 +97,12 @@ public:
 	AStrangeSideEffectsCharacter();
 	
 	//Getter for the IsSeeingInvisible Variable
+	bool GetIsSmall();
+
+	bool GetIsSpeed();
+
+	bool GetIsFloating();
+
 	bool GetIsSeeingInvisible();
 
 	void SetDrinkingState(bool NewDrinkingState);
@@ -158,5 +165,7 @@ private:
 	ESideEffectToApply EnumSideEffectToApply = ESideEffectToApply::ESETA_Clear;
 
 	APotionActor* PotionActor = nullptr;
+
+	AStrangeSideEffectsHUD* HUD = nullptr;
 };
 

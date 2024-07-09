@@ -67,6 +67,12 @@
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\PotionActor.cpp">
       <Filter>Source\StrangeSideEffects\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\StrangeSideEffects\Private\StrangeSideEffectsHUD.cpp">
+      <Filter>Source\StrangeSideEffects\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\StrangeSideEffects\Private\StrangeSideEffectsOverlay.cpp">
+      <Filter>Source\StrangeSideEffects\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\StrangeSideEffects\Public">
       <UniqueIdentifier>{6F32545F-3684-3A94-B9EC-89A3E50030D4}</UniqueIdentifier>
     </Filter>
@@ -77,6 +83,12 @@
       <Filter>Source\StrangeSideEffects\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\PotionActor.h">
+      <Filter>Source\StrangeSideEffects\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\StrangeSideEffects\Public\StrangeSideEffectsHUD.h">
+      <Filter>Source\StrangeSideEffects\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\StrangeSideEffects\Public\StrangeSideEffectsOverlay.h">
       <Filter>Source\StrangeSideEffects\Public</Filter>
     </ClInclude>
   </ItemGroup>

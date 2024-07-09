@@ -13,6 +13,8 @@
 #include "InputActionValue.h"
 #include "NiagaraComponent.h"
 #include "PotionActor.h"
+#include "Kismet/GameplayStatics.h"
+#include "StrangeSideEffectsHUD.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -67,6 +69,21 @@ AStrangeSideEffectsCharacter::AStrangeSideEffectsCharacter()
 	VisibilityEffect->SetupAttachment(GetRootComponent());
 }
 
+bool AStrangeSideEffectsCharacter::GetIsSmall()
+{
+	return IsSmall;
+}
+
+bool AStrangeSideEffectsCharacter::GetIsSpeed()
+{
+	return IsSpeed;
+}
+
+bool AStrangeSideEffectsCharacter::GetIsFloating()
+{
+	return IsFloating;
+}
+
 bool AStrangeSideEffectsCharacter::GetIsSeeingInvisible()
 {
 	return IsSeeingInvisible;
@@ -87,6 +104,12 @@ void AStrangeSideEffectsCharacter::BeginPlay()
 	SpeedEffect->Deactivate();
 	FloatEffect->Deactivate();
 	VisibilityEffect->Deactivate();
+
+	APlayerController* PlayerController = Cast<APlayerController>(GetController());
+	if (PlayerController)
+	{
+		HUD = Cast<AStrangeSideEffectsHUD>(PlayerController->GetHUD());
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -216,63 +239,75 @@ void AStrangeSideEffectsCharacter::ApplySideEffect()
 	{
 		if (!IsSmall)
 		{
+			IsSmall = true;
 			GetCapsuleComponent()->SetWorldScale3D(FVector(0.5f, 0.5f, 0.5f));
 			GetMesh()->SetWorldScale3D(FVector(0.5f, 0.5f, 0.5f));
 			GetMesh()->SetClothMaxDistanceScale(0.1f);
 			CameraBoom->TargetArmLength = 200.0f;
 			SmallEffect->Activate();
+			HUD->StartSmallTimer();
 		}
 		else
 		{
+			IsSmall = false;
 			GetCapsuleComponent()->SetWorldScale3D(FVector(1.0, 1.0f, 1.0f));
 			GetMesh()->SetWorldScale3D(FVector(1.0, 1.0f, 1.0f));
 			GetMesh()->SetClothMaxDistanceScale(1.0f);
 			CameraBoom->TargetArmLength = 400.0f;
 			SmallEffect->Deactivate();
+			HUD->StopSmallTimer();
 		}
-		IsSmall = !IsSmall;
 	}
 	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Speed)
 	{
 		float NewMaxWalkSpeed = 500.f;
 		if (!IsSpeed)
 		{
+			IsSpeed = true;
 			NewMaxWalkSpeed = 1000.f;
 			SpeedEffect->Activate();
+			HUD->StartSpeedTimer();
 		}
 		else
 		{
+			IsSpeed = false;
 			SpeedEffect->Deactivate();
+			HUD->StopSpeedTimer();
 		}
 		GetCharacterMovement()->MaxWalkSpeed = NewMaxWalkSpeed;
-		IsSpeed = !IsSpeed;
 	}
 	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Float)
 	{
 		float NewGravityScale = 1.5f;
 		if (!IsFloating)
 		{
+			IsFloating = true;
 			NewGravityScale = 0.5f;
 			FloatEffect->Activate();
+			HUD->StartFloatTimer();
 		}
 		else
 		{
+			IsFloating = false;
 			FloatEffect->Deactivate();
+			HUD->StopFloatTimer();
 		}
 		GetCharacterMovement()->GravityScale = NewGravityScale;
-		IsFloating = !IsFloating;
 	}
 	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Visible)
 	{
 		if (!IsSeeingInvisible)
 		{
+			IsSeeingInvisible = true;
 			VisibilityEffect->Activate();
+			HUD->StartVisibilityTimer();
 		}
 		else
 		{
+			IsSeeingInvisible = false;
 			VisibilityEffect->Deactivate();
+			HUD->StopVisibilityTimer();
 		}
-		IsSeeingInvisible = !IsSeeingInvisible;
 	}
 }
 
