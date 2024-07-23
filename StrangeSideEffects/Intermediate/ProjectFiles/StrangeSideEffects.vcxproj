@@ -278,6 +278,9 @@
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\InvisibleActor.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\StrangeSideEffects\Private\Pickup.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\PotionActor.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -289,6 +292,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\ApplySideEffectNotify.h"/>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\InvisibleActor.h"/>
+    <ClInclude Include="..\..\Source\StrangeSideEffects\Public\Pickup.h"/>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\PotionActor.h"/>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\StrangeSideEffectsHUD.h"/>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\StrangeSideEffectsOverlay.h"/>

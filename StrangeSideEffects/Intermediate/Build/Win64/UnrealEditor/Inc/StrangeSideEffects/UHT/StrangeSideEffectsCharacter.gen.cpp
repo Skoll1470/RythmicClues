@@ -216,6 +216,17 @@ struct Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics
 		{ "ToolTip", "Showing Invisible Actors Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ClearAction_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Clearing all Side Effects Input Action */" },
+#endif
+		{ "ModuleRelativePath", "StrangeSideEffectsCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Clearing all Side Effects Input Action" },
+#endif
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DrinkingMontage_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Animation" },
@@ -261,6 +272,7 @@ struct Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpeedAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FloatAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_VisibilityAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ClearAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DrinkingMontage;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SmallEffect;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpeedEffect;
@@ -284,6 +296,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEf
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_SpeedAction = { "SpeedAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AStrangeSideEffectsCharacter, SpeedAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpeedAction_MetaData), NewProp_SpeedAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_FloatAction = { "FloatAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AStrangeSideEffectsCharacter, FloatAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FloatAction_MetaData), NewProp_FloatAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_VisibilityAction = { "VisibilityAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AStrangeSideEffectsCharacter, VisibilityAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VisibilityAction_MetaData), NewProp_VisibilityAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_ClearAction = { "ClearAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AStrangeSideEffectsCharacter, ClearAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ClearAction_MetaData), NewProp_ClearAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_DrinkingMontage = { "DrinkingMontage", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AStrangeSideEffectsCharacter, DrinkingMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DrinkingMontage_MetaData), NewProp_DrinkingMontage_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_SmallEffect = { "SmallEffect", nullptr, (EPropertyFlags)0x004000000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AStrangeSideEffectsCharacter, SmallEffect), Z_Construct_UClass_UNiagaraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SmallEffect_MetaData), NewProp_SmallEffect_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_SpeedEffect = { "SpeedEffect", nullptr, (EPropertyFlags)0x004000000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AStrangeSideEffectsCharacter, SpeedEffect), Z_Construct_UClass_UNiagaraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpeedEffect_MetaData), NewProp_SpeedEffect_MetaData) };
@@ -301,6 +314,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AStrangeS
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_SpeedAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_FloatAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_VisibilityAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_ClearAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_DrinkingMontage,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_SmallEffect,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AStrangeSideEffectsCharacter_Statics::NewProp_SpeedEffect,
@@ -352,10 +366,10 @@ struct Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEff
 		{ ESideEffectToApply_StaticEnum, TEXT("ESideEffectToApply"), &Z_Registration_Info_UEnum_ESideEffectToApply, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1590783964U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AStrangeSideEffectsCharacter, AStrangeSideEffectsCharacter::StaticClass, TEXT("AStrangeSideEffectsCharacter"), &Z_Registration_Info_UClass_AStrangeSideEffectsCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AStrangeSideEffectsCharacter), 428723794U) },
+		{ Z_Construct_UClass_AStrangeSideEffectsCharacter, AStrangeSideEffectsCharacter::StaticClass, TEXT("AStrangeSideEffectsCharacter"), &Z_Registration_Info_UClass_AStrangeSideEffectsCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AStrangeSideEffectsCharacter), 3061408202U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_StrangeSideEffectsCharacter_h_3395933570(TEXT("/Script/StrangeSideEffects"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_StrangeSideEffectsCharacter_h_2825429380(TEXT("/Script/StrangeSideEffects"),
 	Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_StrangeSideEffectsCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_StrangeSideEffectsCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_StrangeSideEffectsCharacter_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_StrangeSideEffectsCharacter_h_Statics::EnumInfo));

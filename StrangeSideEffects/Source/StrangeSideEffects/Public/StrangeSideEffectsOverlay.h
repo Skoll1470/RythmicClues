@@ -34,6 +34,8 @@ public:
 
 	void UpdateTimer(int32 Minutes, int32 Seconds);
 
+	void UpdatePickupCount(int32 NewPickupCount);
+
 private:
 
 	UPROPERTY(meta = (BindWidget))
@@ -62,4 +64,7 @@ private:
 
 	UPROPERTY(meta = (BindWidget))
 	UTextBlock* Timer = nullptr;
+
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* PickupCount = nullptr;
 };

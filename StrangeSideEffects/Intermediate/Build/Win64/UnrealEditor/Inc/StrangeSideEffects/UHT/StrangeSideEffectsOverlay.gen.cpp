@@ -79,6 +79,11 @@ struct Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/StrangeSideEffectsOverlay.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PickupCount_MetaData[] = {
+		{ "BindWidget", "" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/StrangeSideEffectsOverlay.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SmallIcon;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpeedIcon;
@@ -89,6 +94,7 @@ struct Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FloatTime;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_VisibilityTime;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Timer;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PickupCount;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -105,6 +111,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStrangeSideEf
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_FloatTime = { "FloatTime", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UStrangeSideEffectsOverlay, FloatTime), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FloatTime_MetaData), NewProp_FloatTime_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_VisibilityTime = { "VisibilityTime", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UStrangeSideEffectsOverlay, VisibilityTime), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VisibilityTime_MetaData), NewProp_VisibilityTime_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_Timer = { "Timer", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UStrangeSideEffectsOverlay, Timer), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Timer_MetaData), NewProp_Timer_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_PickupCount = { "PickupCount", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UStrangeSideEffectsOverlay, PickupCount), Z_Construct_UClass_UTextBlock_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PickupCount_MetaData), NewProp_PickupCount_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_SmallIcon,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_SpeedIcon,
@@ -115,6 +122,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UStrangeS
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_FloatTime,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_VisibilityTime,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_Timer,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::NewProp_PickupCount,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UStrangeSideEffectsOverlay_Statics::DependentSingletons[])() = {
@@ -158,10 +166,10 @@ UStrangeSideEffectsOverlay::~UStrangeSideEffectsOverlay() {}
 struct Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_Public_StrangeSideEffectsOverlay_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UStrangeSideEffectsOverlay, UStrangeSideEffectsOverlay::StaticClass, TEXT("UStrangeSideEffectsOverlay"), &Z_Registration_Info_UClass_UStrangeSideEffectsOverlay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStrangeSideEffectsOverlay), 2586228976U) },
+		{ Z_Construct_UClass_UStrangeSideEffectsOverlay, UStrangeSideEffectsOverlay::StaticClass, TEXT("UStrangeSideEffectsOverlay"), &Z_Registration_Info_UClass_UStrangeSideEffectsOverlay, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UStrangeSideEffectsOverlay), 1373474600U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_Public_StrangeSideEffectsOverlay_h_2312578460(TEXT("/Script/StrangeSideEffects"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_Public_StrangeSideEffectsOverlay_h_1142538508(TEXT("/Script/StrangeSideEffects"),
 	Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_Public_StrangeSideEffectsOverlay_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_thoma_OneDrive_Bureau_Work_StrangeSideEffect_StrangeSideEffects_Source_StrangeSideEffects_Public_StrangeSideEffectsOverlay_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

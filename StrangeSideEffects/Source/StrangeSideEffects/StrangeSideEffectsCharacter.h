@@ -75,6 +75,10 @@ class AStrangeSideEffectsCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* VisibilityAction;
 
+	/** Clearing all Side Effects Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* ClearAction;
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Animation, meta = (AllowPrivateAccess = "true"))
 	UAnimMontage* DrinkingMontage = nullptr;
 
@@ -111,6 +115,8 @@ public:
 
 	void SetEnumSideEffectToApply(ESideEffectToApply NewEnum);
 
+	void AddPickup();
+
 protected:
 
 	/** Called for movement input */
@@ -130,6 +136,9 @@ protected:
 
 	/** Called for Seeing Invisible Input*/
 	void Visibility(const FInputActionValue& Value);
+
+	/** Called for Clearing all Side Effects Input*/
+	void Clear(const FInputActionValue& Value);
 
 	void PlayDrinkingMontage();
 
@@ -167,5 +176,7 @@ private:
 	APotionActor* PotionActor = nullptr;
 
 	AStrangeSideEffectsHUD* HUD = nullptr;
+
+	int32 PickupCount = 0;
 };
 

@@ -64,6 +64,9 @@
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\InvisibleActor.cpp">
       <Filter>Source\StrangeSideEffects\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\StrangeSideEffects\Private\Pickup.cpp">
+      <Filter>Source\StrangeSideEffects\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\PotionActor.cpp">
       <Filter>Source\StrangeSideEffects\Private</Filter>
     </ClCompile>
@@ -80,6 +83,9 @@
       <Filter>Source\StrangeSideEffects\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\InvisibleActor.h">
+      <Filter>Source\StrangeSideEffects\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\StrangeSideEffects\Public\Pickup.h">
       <Filter>Source\StrangeSideEffects\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\PotionActor.h">

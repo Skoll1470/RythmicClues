@@ -95,3 +95,10 @@ void UStrangeSideEffectsOverlay::UpdateTimer(int32 Minutes, int32 Seconds)
 	FText NewText = FText::FromString(String);
 	Timer->SetText(NewText);
 }
+
+void UStrangeSideEffectsOverlay::UpdatePickupCount(int32 NewPickupCount)
+{
+	FString String = FString::Printf(TEXT("%d"), NewPickupCount);
+	FText NewText = FText::FromString(String);
+	PickupCount->SetText(NewText);
+}

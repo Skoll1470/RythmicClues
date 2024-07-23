@@ -67,6 +67,9 @@ AStrangeSideEffectsCharacter::AStrangeSideEffectsCharacter()
 	FloatEffect->SetupAttachment(GetRootComponent());
 	VisibilityEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("VisibilityParticleEffect"));
 	VisibilityEffect->SetupAttachment(GetRootComponent());
+
+	GetMesh()->SetGenerateOverlapEvents(true);
+	GetMesh()->SetCollisionResponseToChannel(ECollisionChannel::ECC_WorldDynamic, ECollisionResponse::ECR_Overlap);
 }
 
 bool AStrangeSideEffectsCharacter::GetIsSmall()
@@ -150,6 +153,9 @@ void AStrangeSideEffectsCharacter::SetupPlayerInputComponent(UInputComponent* Pl
 
 		// Visibility
 		EnhancedInputComponent->BindAction(VisibilityAction, ETriggerEvent::Started, this, &AStrangeSideEffectsCharacter::Visibility);
+
+		// Clear
+		EnhancedInputComponent->BindAction(ClearAction, ETriggerEvent::Started, this, &AStrangeSideEffectsCharacter::Clear);
 	}
 	else
 	{
@@ -226,6 +232,15 @@ void AStrangeSideEffectsCharacter::Visibility(const FInputActionValue& Value)
 	{
 		PlayDrinkingMontage();
 		EnumSideEffectToApply = ESideEffectToApply::ESETA_Visible;
+	}
+}
+
+void AStrangeSideEffectsCharacter::Clear(const FInputActionValue& Value)
+{
+	if (Controller != nullptr)
+	{
+		PlayDrinkingMontage();
+		EnumSideEffectToApply = ESideEffectToApply::ESETA_Clear;
 	}
 }
 
@@ -309,11 +324,52 @@ void AStrangeSideEffectsCharacter::ApplySideEffect()
 			HUD->StopVisibilityTimer();
 		}
 	}
+	else if (EnumSideEffectToApply == ESideEffectToApply::ESETA_Clear)
+	{
+		if (IsSmall)
+		{
+			IsSmall = false;
+			GetCapsuleComponent()->SetWorldScale3D(FVector(1.0, 1.0f, 1.0f));
+			GetMesh()->SetWorldScale3D(FVector(1.0, 1.0f, 1.0f));
+			GetMesh()->SetClothMaxDistanceScale(1.0f);
+			CameraBoom->TargetArmLength = 400.0f;
+			SmallEffect->Deactivate();
+			HUD->StopSmallTimer();
+		}
+		if (IsSpeed)
+		{
+			float NewMaxWalkSpeed = 500.f;
+			IsSpeed = false;
+			SpeedEffect->Deactivate();
+			HUD->StopSpeedTimer();
+			GetCharacterMovement()->MaxWalkSpeed = NewMaxWalkSpeed;
+		}
+		if (IsFloating)
+		{
+			float NewGravityScale = 1.5f;
+			IsFloating = false;
+			FloatEffect->Deactivate();
+			HUD->StopFloatTimer();
+			GetCharacterMovement()->GravityScale = NewGravityScale;
+		}
+		if (IsSeeingInvisible)
+		{
+			IsSeeingInvisible = false;
+			VisibilityEffect->Deactivate();
+			HUD->StopVisibilityTimer();
+		}
+	}
 }
 
 void AStrangeSideEffectsCharacter::SetEnumSideEffectToApply(ESideEffectToApply NewEnum)
 {
 	EnumSideEffectToApply = NewEnum;
+}
+
+void AStrangeSideEffectsCharacter::AddPickup()
+{
+	PickupCount++;
+	HUD->UpdatePickupCount(PickupCount);
 }
 
 void AStrangeSideEffectsCharacter::PlayDrinkingMontage()

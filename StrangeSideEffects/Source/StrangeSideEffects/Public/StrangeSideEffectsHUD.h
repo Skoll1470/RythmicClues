@@ -32,6 +32,8 @@ public:
 
 	void StopVisibilityTimer();
 
+	void UpdatePickupCount(int32 NewPickupCount);
+
 protected:
 
 	virtual void BeginPlay() override;

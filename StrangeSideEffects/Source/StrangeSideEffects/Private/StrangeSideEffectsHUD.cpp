@@ -60,7 +60,7 @@ void AStrangeSideEffectsHUD::FloatCountdown()
 	if (FloatTime > 0)
 	{
 		FloatTime--;
-		Overlay->UpdateSmallTime(FloatTime);
+		Overlay->UpdateFloatTime(FloatTime);
 	}
 	else
 	{
@@ -185,4 +185,9 @@ void AStrangeSideEffectsHUD::StopVisibilityTimer()
 			PlayerCharacter->SetEnumSideEffectToApply(ESideEffectToApply::ESETA_Clear);
 		}
 	}
+}
+
+void AStrangeSideEffectsHUD::UpdatePickupCount(int32 NewPickupCount)
+{
+	Overlay->UpdatePickupCount(NewPickupCount);
 }
