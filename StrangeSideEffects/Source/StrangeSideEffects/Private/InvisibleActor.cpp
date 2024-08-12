@@ -23,13 +23,6 @@ void AInvisibleActor::BeginPlay()
 	
 	AActor* FoundActor = UGameplayStatics::GetActorOfClass(GetWorld(), AStrangeSideEffectsCharacter::StaticClass());
 	PlayerCharacter = Cast<AStrangeSideEffectsCharacter>(FoundActor);
-	if (PlayerCharacter != nullptr)
-	{
-		if (GEngine)
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 20.f, FColor::Green, TEXT("Player casted"));
-		}
-	}
 }
 
 // Called every frame

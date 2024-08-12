@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\unrealgame\\inc\\strangesideeffects\\uht\\pickup.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\x64\\strangesideeffects\\shipping\\engine\\sharedpch.engine.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\strangesideeffects\\definitions.strangesideeffects.h",
+            "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\source\\strangesideeffects\\public\\pickup.h",
+            "c:\\users\\thoma\\onedrive\\bureau\\work\\strangesideeffect\\strangesideeffects\\intermediate\\build\\win64\\unrealgame\\inc\\strangesideeffects\\uht\\pickup.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

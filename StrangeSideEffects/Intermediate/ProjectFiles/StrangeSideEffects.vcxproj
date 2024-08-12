@@ -253,6 +253,7 @@
     <None Include="..\..\Source\StrangeSideEffects.Target.cs"/>
     <None Include="..\..\Source\StrangeSideEffectsEditor.Target.cs"/>
     <None Include="..\..\.vsconfig"/>
+    <None Include="..\..\AncientTreasures.png"/>
     <None Include="..\..\UpgradeLog.htm"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
@@ -275,6 +276,9 @@
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\ApplySideEffectNotify.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\StrangeSideEffects\Private\EndGameOverlay.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\InvisibleActor.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -291,6 +295,7 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\ApplySideEffectNotify.h"/>
+    <ClInclude Include="..\..\Source\StrangeSideEffects\Public\EndGameOverlay.h"/>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\InvisibleActor.h"/>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\Pickup.h"/>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\PotionActor.h"/>

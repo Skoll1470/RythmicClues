@@ -5,6 +5,9 @@
 #include "Components/SphereComponent.h"
 #include "StrangeSideEffects/StrangeSideEffectsCharacter.h"
 #include "Kismet/GameplayStatics.h"
+#include "NiagaraComponent.h"
+#include "Components/SpotLightComponent.h"
+#include "Components/PointLightComponent.h"
 
 // Sets default values
 APickup::APickup()
@@ -22,6 +25,19 @@ APickup::APickup()
 	SphereComponent->SetupAttachment(GetRootComponent());
 	SphereComponent->SetSphereRadius(100.f);
 	SphereComponent->SetGenerateOverlapEvents(true);
+
+	ParticleEffect = CreateDefaultSubobject<UNiagaraComponent>(TEXT("FloatParticleEffect"));
+	ParticleEffect->SetupAttachment(GetRootComponent());
+
+	SpotLight = CreateDefaultSubobject<USpotLightComponent>(TEXT("SpotLight"));
+	SpotLight->SetupAttachment(RootComponent);
+	SpotLight->SetIntensity(100.f);
+	SpotLight->SetLightColor(FColor::White);
+
+	PointLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("PointLight"));
+	PointLight->SetupAttachment(RootComponent);
+	SpotLight->SetIntensity(100.f);
+	SpotLight->SetLightColor(FColor::White);
 }
 
 // Called when the game starts or when spawned
@@ -51,5 +67,7 @@ void APickup::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 void APickup::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	RunningTime += DeltaTime;
+	AddActorWorldOffset(FVector(0.f, 0.f, FMath::Sin(RunningTime * 5.f)));
 }
 

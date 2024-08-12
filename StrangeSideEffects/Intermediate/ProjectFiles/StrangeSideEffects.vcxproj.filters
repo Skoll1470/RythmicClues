@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\AncientTreasures.png" />
     <None Include="..\..\UpgradeLog.htm" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -61,6 +62,9 @@
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\ApplySideEffectNotify.cpp">
       <Filter>Source\StrangeSideEffects\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\StrangeSideEffects\Private\EndGameOverlay.cpp">
+      <Filter>Source\StrangeSideEffects\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\StrangeSideEffects\Private\InvisibleActor.cpp">
       <Filter>Source\StrangeSideEffects\Private</Filter>
     </ClCompile>
@@ -80,6 +84,9 @@
       <UniqueIdentifier>{6F32545F-3684-3A94-B9EC-89A3E50030D4}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\ApplySideEffectNotify.h">
+      <Filter>Source\StrangeSideEffects\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\StrangeSideEffects\Public\EndGameOverlay.h">
       <Filter>Source\StrangeSideEffects\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\StrangeSideEffects\Public\InvisibleActor.h">

@@ -7,6 +7,9 @@
 #include "Pickup.generated.h"
 
 class USphereComponent;
+class UNiagaraComponent;
+class USpotLightComponent;
+class UPointLightComponent;
 
 UCLASS()
 class STRANGESIDEEFFECTS_API APickup : public AActor
@@ -33,6 +36,9 @@ protected:
 		bool bFromSweep,
 		const FHitResult& SweepResult);
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = ParticleEffects, meta = (AllowPrivateAccess = "true"))
+	UNiagaraComponent* ParticleEffect = nullptr;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -45,6 +51,11 @@ private:
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent* StaticMesh;
 
-	void Test();
+	float RunningTime = 0.f;
 
+	UPROPERTY(EditAnywhere)
+	USpotLightComponent* SpotLight = nullptr;
+
+	UPROPERTY(EditAnywhere)
+	UPointLightComponent* PointLight = nullptr;
 };

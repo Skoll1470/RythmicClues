@@ -98,7 +98,17 @@ void UStrangeSideEffectsOverlay::UpdateTimer(int32 Minutes, int32 Seconds)
 
 void UStrangeSideEffectsOverlay::UpdatePickupCount(int32 NewPickupCount)
 {
-	FString String = FString::Printf(TEXT("%d"), NewPickupCount);
+	FString String = FString::Printf(TEXT("%d / %d"), NewPickupCount, MaxPickupCount);
 	FText NewText = FText::FromString(String);
 	PickupCount->SetText(NewText);
+}
+
+void UStrangeSideEffectsOverlay::SetMaxPickupCount(int32 MaxCount)
+{
+	MaxPickupCount = MaxCount;
+}
+
+int32 UStrangeSideEffectsOverlay::GetMaxPickupCount()
+{
+	return MaxPickupCount;
 }

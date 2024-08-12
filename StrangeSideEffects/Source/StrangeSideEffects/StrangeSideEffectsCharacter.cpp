@@ -156,6 +156,9 @@ void AStrangeSideEffectsCharacter::SetupPlayerInputComponent(UInputComponent* Pl
 
 		// Clear
 		EnhancedInputComponent->BindAction(ClearAction, ETriggerEvent::Started, this, &AStrangeSideEffectsCharacter::Clear);
+
+		// Pause
+		EnhancedInputComponent->BindAction(PauseAction, ETriggerEvent::Started, this, &AStrangeSideEffectsCharacter::Pause);
 	}
 	else
 	{
@@ -201,7 +204,7 @@ void AStrangeSideEffectsCharacter::Look(const FInputActionValue& Value)
 
 void AStrangeSideEffectsCharacter::Small(const FInputActionValue& Value)
 {
-	if (Controller != nullptr)
+	if (Controller != nullptr && !IsDrinking)
 	{
 		PlayDrinkingMontage();
 		EnumSideEffectToApply = ESideEffectToApply::ESETA_Small;
@@ -210,7 +213,7 @@ void AStrangeSideEffectsCharacter::Small(const FInputActionValue& Value)
 
 void AStrangeSideEffectsCharacter::Speed(const FInputActionValue& Value)
 {
-	if (Controller != nullptr)
+	if (Controller != nullptr && !IsDrinking)
 	{
 		PlayDrinkingMontage();
 		EnumSideEffectToApply = ESideEffectToApply::ESETA_Speed;
@@ -219,7 +222,7 @@ void AStrangeSideEffectsCharacter::Speed(const FInputActionValue& Value)
 
 void AStrangeSideEffectsCharacter::Float(const FInputActionValue& Value)
 {
-	if (Controller != nullptr)
+	if (Controller != nullptr && !IsDrinking)
 	{
 		PlayDrinkingMontage();
 		EnumSideEffectToApply = ESideEffectToApply::ESETA_Float;
@@ -228,7 +231,7 @@ void AStrangeSideEffectsCharacter::Float(const FInputActionValue& Value)
 
 void AStrangeSideEffectsCharacter::Visibility(const FInputActionValue& Value)
 {
-	if (Controller != nullptr)
+	if (Controller != nullptr && !IsDrinking)
 	{
 		PlayDrinkingMontage();
 		EnumSideEffectToApply = ESideEffectToApply::ESETA_Visible;
@@ -370,6 +373,17 @@ void AStrangeSideEffectsCharacter::AddPickup()
 {
 	PickupCount++;
 	HUD->UpdatePickupCount(PickupCount);
+	if (HUD->HasAllPikcups(PickupCount))
+	{
+		APlayerController* PlayerController = Cast<APlayerController>(GetController());
+		if (PlayerController)
+		{
+			PlayerController->SetInputMode(FInputModeUIOnly());
+			PlayerController->bShowMouseCursor = true;
+			PlayerController->SetPause(true);
+		}
+		HUD->SwitchToEndGameOverlay();
+	}
 }
 
 void AStrangeSideEffectsCharacter::PlayDrinkingMontage()
@@ -385,5 +399,18 @@ void AStrangeSideEffectsCharacter::PlayDrinkingMontage()
 		PotionActor->StaticMesh->SetStaticMesh(PotionMesh);
 		FAttachmentTransformRules TransformRules(EAttachmentRule::SnapToTarget, true);
 		PotionActor->StaticMesh->AttachToComponent(GetMesh(), TransformRules, FName("PotionSocket"));
+	}
+}
+
+void AStrangeSideEffectsCharacter::Pause()
+{
+
+	APlayerController* PlayerController = Cast<APlayerController>(GetController());
+	if (PlayerController)
+	{
+		HUD->Pause();
+		PlayerController->SetInputMode(FInputModeGameAndUI());
+		PlayerController->bShowMouseCursor = true;
+		PlayerController->SetPause(true);
 	}
 }

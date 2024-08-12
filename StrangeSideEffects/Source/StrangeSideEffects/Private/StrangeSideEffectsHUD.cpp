@@ -5,6 +5,8 @@
 #include "StrangeSideEffectsOverlay.h"
 #include "Kismet/GameplayStatics.h"
 #include "StrangeSideEffects/StrangeSideEffectsCharacter.h"
+#include "StrangeSideEffects/Public/Pickup.h"
+#include "StrangeSideEffects/Public/EndGameOverlay.h"
 
 void AStrangeSideEffectsHUD::BeginPlay()
 {
@@ -14,19 +16,30 @@ void AStrangeSideEffectsHUD::BeginPlay()
 	if (World)
 	{
 		APlayerController* Controller = World->GetFirstPlayerController();
-		if (Controller && OverlayClass)
+		if (Controller && SideEffectsOverlayClass)
 		{
-			Overlay = CreateWidget<UStrangeSideEffectsOverlay>(Controller, OverlayClass);
-			Overlay->AddToViewport();
-			Overlay->ShowSmall(false);
-			Overlay->ShowSpeed(false);
-			Overlay->ShowFloat(false);
-			Overlay->ShowVisiblity(false);
+			SideEffectsOverlay = CreateWidget<UStrangeSideEffectsOverlay>(Controller, SideEffectsOverlayClass);
+			SideEffectsOverlay->AddToViewport();
+			SideEffectsOverlay->ShowSmall(false);
+			SideEffectsOverlay->ShowSpeed(false);
+			SideEffectsOverlay->ShowFloat(false);
+			SideEffectsOverlay->ShowVisiblity(false);
+		}
+		if (PauseOverlayClass)
+		{
+			PauseOverlay = CreateWidget<UUserWidget>(Controller, PauseOverlayClass);
+			PauseOverlay->AddToViewport();
+			PauseOverlay->SetVisibility(ESlateVisibility::Hidden);
 		}
 	}
 	AActor* FoundActor = UGameplayStatics::GetActorOfClass(GetWorld(), AStrangeSideEffectsCharacter::StaticClass());
 	PlayerCharacter = Cast<AStrangeSideEffectsCharacter>(FoundActor);
 	GetWorldTimerManager().SetTimer(THTimer, this, &AStrangeSideEffectsHUD::TimerCountdown, 1.0f, true, 1.0f);
+
+	TArray<AActor*> FoundActors;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), APickup::StaticClass(), FoundActors);
+	SideEffectsOverlay->SetMaxPickupCount(FoundActors.Num());
+	SideEffectsOverlay->UpdatePickupCount(0);
 }
 
 void AStrangeSideEffectsHUD::SmallCountdown()
@@ -34,7 +47,7 @@ void AStrangeSideEffectsHUD::SmallCountdown()
 	if (SmallTime > 0)
 	{
 		SmallTime--;
-		Overlay->UpdateSmallTime(SmallTime);
+		SideEffectsOverlay->UpdateSmallTime(SmallTime);
 	}
 	else
 	{
@@ -47,7 +60,7 @@ void AStrangeSideEffectsHUD::SpeedCountdown()
 	if (SpeedTime > 0)
 	{
 		SpeedTime--;
-		Overlay->UpdateSpeedTime(SpeedTime);
+		SideEffectsOverlay->UpdateSpeedTime(SpeedTime);
 	}
 	else
 	{
@@ -60,7 +73,7 @@ void AStrangeSideEffectsHUD::FloatCountdown()
 	if (FloatTime > 0)
 	{
 		FloatTime--;
-		Overlay->UpdateFloatTime(FloatTime);
+		SideEffectsOverlay->UpdateFloatTime(FloatTime);
 	}
 	else
 	{
@@ -73,7 +86,7 @@ void AStrangeSideEffectsHUD::VisibilityCountdown()
 	if (VisibilityTime > 0)
 	{
 		VisibilityTime--;
-		Overlay->UpdateVisibilityTime(VisibilityTime);
+		SideEffectsOverlay->UpdateVisibilityTime(VisibilityTime);
 	}
 	else
 	{
@@ -92,38 +105,38 @@ void AStrangeSideEffectsHUD::TimerCountdown()
 		TimerSeconds = 0;
 		TimerMinutes++;
 	}
-	Overlay->UpdateTimer(TimerMinutes, TimerSeconds);
+	SideEffectsOverlay->UpdateTimer(TimerMinutes, TimerSeconds);
 }
 
 void AStrangeSideEffectsHUD::StartSmallTimer()
 {
-	Overlay->ShowSmall(true);
+	SideEffectsOverlay->ShowSmall(true);
 	GetWorldTimerManager().SetTimer(THSmall, this, &AStrangeSideEffectsHUD::SmallCountdown, 1.0f, true, 1.0f);
 }
 
 void AStrangeSideEffectsHUD::StartSpeedTimer()
 {
-	Overlay->ShowSpeed(true);
+	SideEffectsOverlay->ShowSpeed(true);
 	GetWorldTimerManager().SetTimer(THSpeed, this, &AStrangeSideEffectsHUD::SpeedCountdown, 1.0f, true, 1.0f);
 }
 
 void AStrangeSideEffectsHUD::StartFloatTimer()
 {
-	Overlay->ShowFloat(true);
+	SideEffectsOverlay->ShowFloat(true);
 	GetWorldTimerManager().SetTimer(THFloat, this, &AStrangeSideEffectsHUD::FloatCountdown, 1.0f, true, 1.0f);
 }
 
 void AStrangeSideEffectsHUD::StartVisibilityTimer()
 {
-	Overlay->ShowVisiblity(true);
+	SideEffectsOverlay->ShowVisiblity(true);
 	GetWorldTimerManager().SetTimer(THVisibility, this, &AStrangeSideEffectsHUD::VisibilityCountdown, 1.0f, true, 1.0f);
 }
 
 void AStrangeSideEffectsHUD::StopSmallTimer()
 {
 	GetWorldTimerManager().ClearTimer(THSmall);
-	Overlay->ShowSmall(false);
-	Overlay->UpdateSmallTime(30);
+	SideEffectsOverlay->ShowSmall(false);
+	SideEffectsOverlay->UpdateSmallTime(30);
 	SmallTime = 30;
 	if (PlayerCharacter)
 	{
@@ -139,8 +152,8 @@ void AStrangeSideEffectsHUD::StopSmallTimer()
 void AStrangeSideEffectsHUD::StopSpeedTimer()
 {
 	GetWorldTimerManager().ClearTimer(THSpeed);
-	Overlay->ShowSpeed(false);
-	Overlay->UpdateSpeedTime(30);
+	SideEffectsOverlay->ShowSpeed(false);
+	SideEffectsOverlay->UpdateSpeedTime(30);
 	SpeedTime = 30;
 	if (PlayerCharacter)
 	{
@@ -156,8 +169,8 @@ void AStrangeSideEffectsHUD::StopSpeedTimer()
 void AStrangeSideEffectsHUD::StopFloatTimer()
 {
 	GetWorldTimerManager().ClearTimer(THFloat);
-	Overlay->ShowFloat(false);
-	Overlay->UpdateFloatTime(30);
+	SideEffectsOverlay->ShowFloat(false);
+	SideEffectsOverlay->UpdateFloatTime(30);
 	FloatTime = 30;
 	if (PlayerCharacter)
 	{
@@ -173,8 +186,8 @@ void AStrangeSideEffectsHUD::StopFloatTimer()
 void AStrangeSideEffectsHUD::StopVisibilityTimer()
 {
 	GetWorldTimerManager().ClearTimer(THVisibility);
-	Overlay->ShowVisiblity(false);
-	Overlay->UpdateVisibilityTime(30);
+	SideEffectsOverlay->ShowVisiblity(false);
+	SideEffectsOverlay->UpdateVisibilityTime(30);
 	VisibilityTime = 30;
 	if (PlayerCharacter)
 	{
@@ -189,5 +202,32 @@ void AStrangeSideEffectsHUD::StopVisibilityTimer()
 
 void AStrangeSideEffectsHUD::UpdatePickupCount(int32 NewPickupCount)
 {
-	Overlay->UpdatePickupCount(NewPickupCount);
+	SideEffectsOverlay->UpdatePickupCount(NewPickupCount);
+}
+
+bool AStrangeSideEffectsHUD::HasAllPikcups(int32 PickupCount)
+{
+	return PickupCount >= SideEffectsOverlay->GetMaxPickupCount();
+}
+
+void AStrangeSideEffectsHUD::SwitchToEndGameOverlay()
+{
+	GetWorldTimerManager().ClearTimer(THTimer);
+	
+	UWorld* World = GetWorld();
+	if (World)
+	{
+		APlayerController* Controller = World->GetFirstPlayerController();
+		if (Controller && EndGameOverlayClass)
+		{
+			EndGameOverlay = CreateWidget<UEndGameOverlay>(Controller, EndGameOverlayClass);
+			EndGameOverlay->AddToViewport();
+			EndGameOverlay->SetTimerText(TimerMinutes, TimerSeconds);
+		}
+	}
+}
+
+void AStrangeSideEffectsHUD::Pause()
+{
+	PauseOverlay->SetVisibility(ESlateVisibility::Visible);
 }

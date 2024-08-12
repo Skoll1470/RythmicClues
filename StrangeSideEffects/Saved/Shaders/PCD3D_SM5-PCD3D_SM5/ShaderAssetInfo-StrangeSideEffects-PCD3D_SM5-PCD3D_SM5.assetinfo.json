@@ -1,0 +1,1696 @@
+{
+	"AssetInfoVersion": 2,
+	"ShaderCodeToAssets": [
+		{
+			"ShaderMapHash": "73C92B007EB5F32E4703FEEC04206900263127DB",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Head"
+			]
+		},
+		{
+			"ShaderMapHash": "10013F00A42B4EBCCFC7482C6532F8D85733F56E",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Leaves/M_Petal_SubUV"
+			]
+		},
+		{
+			"ShaderMapHash": "AD0E690085598BB73808EC49BD3D3108FA1590C9",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyes/Materials/M_EyeRefractive"
+			]
+		},
+		{
+			"ShaderMapHash": "C7FDDC00EFEBF00FBCF1513AFCD2329FCC879A2D",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_Rope_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "8BF746034D1842D6818BCF42DA8C27BD67C6C945",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyes/Materials/M_Eye_Occlusion"
+			]
+		},
+		{
+			"ShaderMapHash": "EAAB7D03C257D32B317B33AECB3FB2D64178F596",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Masked"
+			]
+		},
+		{
+			"ShaderMapHash": "B272A90698C16A71ADA14ADA3D77667F6F75ED2E",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Leaves/M_Petal_SubUV_Translucent_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "2C5B8107D2B6A4AE170E387D467DE2A734104617",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/M_block"
+			]
+		},
+		{
+			"ShaderMapHash": "596D8B079F261FEC29598914FAE840E20C826CD7",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_Flare_Procedural_Noise_Tex_Glow"
+			]
+		},
+		{
+			"ShaderMapHash": "534843093884583826F0052358BD94AC9E90D182",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/TransformGizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "6E480B0A46A4766DD5820B35CDC5D2B9E6BE16EE",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/m_WhipGlow"
+			]
+		},
+		{
+			"ShaderMapHash": "AEDF740AC033651E8DA6EC59B8EB82072DDD3B4C",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Sheen_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "4322100B63CBC0574CCF32609B111DF7B5CF300C",
+			"Assets": [
+				"/Engine/TemplateResources/M_Template_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "12B7C40DD23E66AE63093DA773CB606C12588A0D",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyes/Materials/M_Eye_Occlusion"
+			]
+		},
+		{
+			"ShaderMapHash": "B9B3BB0EAB23F5BF552587F71FE6C3AC9DE052FF",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/stones_materials/M_stones"
+			]
+		},
+		{
+			"ShaderMapHash": "350B9D0FB14F8411F73866A739C9360437C17FD1",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_RadialFlare_Refraction"
+			]
+		},
+		{
+			"ShaderMapHash": "6397B80F94AC21BC8A2C9FEE33E10A93CC4B0587",
+			"Assets": [
+				"/ControlRig/M_Manip"
+			]
+		},
+		{
+			"ShaderMapHash": "7B7A06117D58074167E94E998B5B125F6F43D873",
+			"Assets": [
+				"/Engine/EditorMaterials/Dataflow/DataflowVertexMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "E3231C11BAE2FB3C10AE337E860C38EF42CBE688",
+			"Assets": [
+				"/Engine/EngineSky/M_Sky_Panning_Clouds2"
+			]
+		},
+		{
+			"ShaderMapHash": "67085E11E03E0F6DDBF5885235C0C00ACA782EAF",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_concrete_paint_Planar_WPO_01_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "181CEE124226B7BC3BC6982CF05C1192F10A212C",
+			"Assets": [
+				"/Engine/EditorMaterials/Camera/CineMat"
+			]
+		},
+		{
+			"ShaderMapHash": "0C8857155E4C11C58D368D63AC3147F6F89CDA93",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyes/Materials/M_EyeRefractive"
+			]
+		},
+		{
+			"ShaderMapHash": "DE4BA615A74A2457C406BEDF2D83C03630262C4F",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_RadialFlare_Tri_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "52425C17B7D1F7FA2E98AF95522AE75F461D1993",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/M_building_concrete"
+			]
+		},
+		{
+			"ShaderMapHash": "405ECE18B9811B8C3EB5CE8403F656BBF55060E1",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_CoinMaterial_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "F8BB221B003037F14E1B311657EB54FB45E7AFC5",
+			"Assets": [
+				"/Engine/EngineMaterials/RemoveSurfaceMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "6085C91B06114000F7D6D914A8CDD891058888C9",
+			"Assets": [
+				"/Game/Stylized_Egypt/Maps/Egypt_MainMenu",
+				"/Game/Stylized_Egypt/Maps/Egypt_Modified",
+				"/Game/Stylized_Egypt/Maps/Stylized_Egypt_Demo"
+			]
+		},
+		{
+			"ShaderMapHash": "8075F11B726105D773AFF628F2B9FC160877CD63",
+			"Assets": [
+				"/Engine/EditorMaterials/PhAT_UnselectedMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "C4F2091CB4642716303765420C141E0349BDF868",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough",
+				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "38FDE51C90B2E613D781984A2F36C1AC56D3C08E",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_CoinMaterial_01b"
+			]
+		},
+		{
+			"ShaderMapHash": "B10E801EA4E105DC64660FDB8FA52ECD63FF0413",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Head"
+			]
+		},
+		{
+			"ShaderMapHash": "A231591F73CE1A8CBE3B0A9BFC52BD6D1FB7C9EC",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/M_Energy_Ripple_Spline"
+			]
+		},
+		{
+			"ShaderMapHash": "88792E20E71D188E84A72EC99C1D9001DC4BCC68",
+			"Assets": [
+				"/Interchange/gltf/M_Default"
+			]
+		},
+		{
+			"ShaderMapHash": "0F5230215B4DBA600854B7FB0C404EA762AD729F",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_concrete_paint_01_Inst",
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_concrete_paint_02_Inst",
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_floor_tile_01_Inst",
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_floor_tile_02_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "A0434321D3CCB2FE446F36206C0EDCC280277CAE",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Skirt"
+			]
+		},
+		{
+			"ShaderMapHash": "F1D2DA21FD0DBA8C3B563445060D285D508CDEB6",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Smoke/M_dust_burst_01"
+			]
+		},
+		{
+			"ShaderMapHash": "05D89B23F3909C8D2D661510EDA8F4C43209F955",
+			"Assets": [
+				"/Game/LevelPrototyping/Materials/M_PrototypeGrid",
+				"/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray_02"
+			]
+		},
+		{
+			"ShaderMapHash": "1CFF5A24D81479BB0A3E58CA58E2296B85D38FEA",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyelash/M_EyelashMaster_N",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Eyelashes"
+			]
+		},
+		{
+			"ShaderMapHash": "59317824FDC3AA2CAA186D5AC634ACE4306E3764",
+			"Assets": [
+				"/Game/ParagonYin/FX/Meshes/Splines/M_Spline_Preview"
+			]
+		},
+		{
+			"ShaderMapHash": "1B57C424BC8CE0791733301F04F07BE425A6084E",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Smoke/M_MagicalSmoke_Generic"
+			]
+		},
+		{
+			"ShaderMapHash": "AAFE8426F50A13107A9F4BDA9C879DCB4B7B6FA9",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_Rope_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "D39F22279A0F4863CC56A0CDB5A05420433BEF5E",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_RadialFlare_Tri"
+			]
+		},
+		{
+			"ShaderMapHash": "257A98279DD5710C5F8B38CAEA3117FBF3775169",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Trails/M_Wind_Ribbon"
+			]
+		},
+		{
+			"ShaderMapHash": "7C6D492817E725D9490C1B8804BFB3E89059DAB6",
+			"Assets": [
+				"/Paper2D/DefaultSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "E59D6028172E6E1E77D8D7590FB48FD2B83CEE26",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyes/Materials/M_TearLine"
+			]
+		},
+		{
+			"ShaderMapHash": "A2EF0C29D26BDAF59D039926CB62B5D8BA134889",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_Floor_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "B65BBD292252187402ABD2FD2D390D3E0664E430",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Maps/BackGroundAssets/M_HDRSky"
+			]
+		},
+		{
+			"ShaderMapHash": "2077912E59E994DEAF0651D17134C9B7CF3FE0A5",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyelash/M_EyelashMaster_N",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Eyelashes"
+			]
+		},
+		{
+			"ShaderMapHash": "0A330C2F745B54802D35962762FCFFF8C2327771",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/M_concrete_paint",
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_concrete_paint_03_Inst",
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_concrete_paint_04_Inst",
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_wood_02_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "77924A2F1CA16160BBECB04E177D945C08505F59",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_Lensflare_TB_Soft"
+			]
+		},
+		{
+			"ShaderMapHash": "BA3C64304277C8780B29B7E66E2D3FBD8E383D93",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Eyes/Materials/M_TearLine"
+			]
+		},
+		{
+			"ShaderMapHash": "2CD852320673959B1AB4B3038C03ED91C20B473F",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Hair"
+			]
+		},
+		{
+			"ShaderMapHash": "BC34CA333E2A06EC4ED343674C56DB5301676F55",
+			"Assets": [
+				"/Engine/EngineMaterials/PhAT_JointLimitMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "57C6A134FE90BCF539C0E66DBAE1CF9CA8679AC7",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Flowers/m_Flower_Flipbook_Translucent"
+			]
+		},
+		{
+			"ShaderMapHash": "21362D3639A7741711E396E032C138B4CC5DB0D0",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/MI_pyramid_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "A0664E37272A5B36298E1A8323B7FCA5EE1686C3",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_JumpWispSpiral"
+			]
+		},
+		{
+			"ShaderMapHash": "F3377F38419732478AF88ACFD1FF0AE4B2D7A714",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Default_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "5411473AA28A57A1204C59DA09328A29936729C2",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Gear"
+			]
+		},
+		{
+			"ShaderMapHash": "55A97C3ACE263DD71525BE9C1F832466B11941CA",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultPostProcessMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "ED06BC3ADBC60D388B561D906A6D06DEBA4AF877",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque"
+			]
+		},
+		{
+			"ShaderMapHash": "0BBECA3BFF90FC4FF663BA9FDFE0C2DEF8F6F443",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Mouth/Materials/M_Mouth_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "75AED43B4349F4C47C16C47CE7101D96B24699C5",
+			"Assets": [
+				"/Engine/EditorMeshes/ColorCalibrator/M_ChromeBall"
+			]
+		},
+		{
+			"ShaderMapHash": "5524543EA07FD2143A89A6D159942C8319FCE9CD",
+			"Assets": [
+				"/Engine/EditorMaterials/PhAT_NoCollisionMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "D14AE63E8859339B4CC825C638D3AB4A20241C9B",
+			"Assets": [
+				"/Engine/EngineSky/M_SimpleSkyDome"
+			]
+		},
+		{
+			"ShaderMapHash": "B88CE2404D57DE5715C2216ADCD19C02B3714896",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/decals_materials/M_decal_dirt",
+				"/Game/Stylized_Egypt/Materials/decals_materials/MI_decal_dirt_03_Inst",
+				"/Game/Stylized_Egypt/Materials/decals_materials/MI_decal_pattern_03_Inst",
+				"/Game/Stylized_Egypt/Materials/decals_materials/MI_decal_pattern_05_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "BCDCD243BCE5E2A9A901BA93DF6A0CFB9C76DFEB",
+			"Assets": [
+				"/Engine/EngineMaterials/FlattenMaterial_WS_Normal_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "6DB35D44E9C712812E2986946CFDA227E76B74D6",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/props_materials/M_egyptian_statue"
+			]
+		},
+		{
+			"ShaderMapHash": "5A43604420F1A4EC743440EE5622870B397EAA60",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/M_metal"
+			]
+		},
+		{
+			"ShaderMapHash": "07908A447BE742BBF5E5534F7B60B24E332FDAB4",
+			"Assets": [
+				"/Game/LevelPrototyping/Materials/M_Solid"
+			]
+		},
+		{
+			"ShaderMapHash": "988BED4471770463B100C5B7629F01048AFA301C",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Debuffs/FX/M_CleanseFlare"
+			]
+		},
+		{
+			"ShaderMapHash": "1BC80C458AFC7DF2DFDBC42595429E1F6155DA43",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/m_DarkFlare_Dynamics"
+			]
+		},
+		{
+			"ShaderMapHash": "3C6783460CB46B09BE3E67FDE3362BE582D6613F",
+			"Assets": [
+				"/Game/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_02",
+				"/Game/Characters/Mannequins/Materials/Instances/Quinn/MI_Quinn_02"
+			]
+		},
+		{
+			"ShaderMapHash": "E1C89746693747159765B457819668B11F89A976",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_Yin_SubtleLineTrail"
+			]
+		},
+		{
+			"ShaderMapHash": "B2CB1D47709D9B4E1BDD51F5DBC306A4BCCBC9AE",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_Yin_WindTrail"
+			]
+		},
+		{
+			"ShaderMapHash": "0DA09C48915AC2C2080D5F79F16EAAF53C205B20",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Leg"
+			]
+		},
+		{
+			"ShaderMapHash": "E3F19649677D439DEA422FCD0486E55833C3289F",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_CPUSparkle"
+			]
+		},
+		{
+			"ShaderMapHash": "335BBA49BACD5FFFC2319A924B942349C67A8235",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Default_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "C7BF4D4BD562D0C729EBD22A7786A0D9960E4DBB",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Skin"
+			]
+		},
+		{
+			"ShaderMapHash": "E2A22A4E69437E0C2C04CF981D32835A79FB50BA",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Rope"
+			]
+		},
+		{
+			"ShaderMapHash": "61326F4E0894210D54E159039EB0EB8CEAF3E231",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/M_Wisp_SplineThicken_Small"
+			]
+		},
+		{
+			"ShaderMapHash": "3D42D44E308FD32D88B3A803ECCBFD8B94133853",
+			"Assets": [
+				"/Game/LevelPrototyping/Materials/MI_PrototypeGrid_Gray"
+			]
+		},
+		{
+			"ShaderMapHash": "112A5E4FEF4C9084F415A3282163C5E00F06C6E7",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/m_flare_noisy_OnlyDistantInst"
+			]
+		},
+		{
+			"ShaderMapHash": "77B8784FB82C2490CF8CB53A54EBACDB14BD5ECA",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/Main"
+			]
+		},
+		{
+			"ShaderMapHash": "9984EB4F77C8F08104DFB265B687CC7955B225BA",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Hair"
+			]
+		},
+		{
+			"ShaderMapHash": "62804453A65D3FD0934A1141AD582463B404B9E7",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/plants_materials/M_plants"
+			]
+		},
+		{
+			"ShaderMapHash": "B8887853F5386EFB2FFEB096EC3AB5F1CEF2E50C",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Default_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "9EED9453C26C2BED839D3D0E32D9332C04562EA0",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Unlit_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "43E1CE536CBEA647360B42A6BAE0FFBB06A2AC6E",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_concrete_paint_05_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "43E22754C33C89280938EB86EEA22D62168D2BB1",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Sheen_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "4891735463ACCB09072DD4460A87D09E263DD780",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/M_VolumeRenderSphereTracePP"
+			]
+		},
+		{
+			"ShaderMapHash": "C739F55454EF53DA860CCF558A3652CCD1C570A3",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_ArmorAttach_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "D7E7015585EC76DC6B6210F75D83C73F3525D2D8",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Whip_Core"
+			]
+		},
+		{
+			"ShaderMapHash": "AFA60555466AC2D3C58DA51288B3098FCD0818BE",
+			"Assets": [
+				"/Interchange/gltf/M_Sheen"
+			]
+		},
+		{
+			"ShaderMapHash": "95BFE255AA5B64E9FA2BC7A300B940C9814B3EBF",
+			"Assets": [
+				"/Engine/BasicShapes/BasicShapeMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "0DD704565096439AD6E58B7AA380658024BBC5DF",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Unlit_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "D3909456FFF3513DD8259607CA1E2DC0753E3DB0",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Gear"
+			]
+		},
+		{
+			"ShaderMapHash": "9B59E757AE9C14081071352103CD43DB8FF53A23",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/DebugMeshMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "086A295957F7269B159607ED14CE2C6840F1B9A9",
+			"Assets": [
+				"/ControlRig/Controls/ControlRigGizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "6F5EEA5B2870DBE740C210FC6F9C71A391BC6C4A",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_upper_body"
+			]
+		},
+		{
+			"ShaderMapHash": "F63C605C8423AAB9E465E86BF644EEAC4C9ED274",
+			"Assets": [
+				"/Engine/EditorMaterials/PreviewShadowIndicatorMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "B28AC95C7B334BE33C4CA1E861A6AE41C0BC3A39",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/m_WindSplines_AfterImages"
+			]
+		},
+		{
+			"ShaderMapHash": "FC92DA5CC2AB6C80615370E473B9FE300D15AB59",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/Xray"
+			]
+		},
+		{
+			"ShaderMapHash": "EF7D1C5D9CDA0C4E6A079D0AA4E24A633A6A78DA",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/plants_materials/MI_plants_01_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "1F105F5D78A95F92C4DB703361FE3FC8257F71E0",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Transmission_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "9ECADA5DC594C292B18504D470D47AF13D318AA6",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "7E47D25EB0F2785D4F1F143C409872EA33312E74",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Masked_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "49E4FF5EF9D3BFD3E468158859CEF57BCDF490AF",
+			"Assets": [
+				"/Game/Stylized_Egypt/Maps/Egypt_MainMenu",
+				"/Game/Stylized_Egypt/Maps/Egypt_Modified",
+				"/Game/Stylized_Egypt/Maps/Stylized_Egypt_Demo"
+			]
+		},
+		{
+			"ShaderMapHash": "4E529E60D6EDF012EB4040DFC8EB836274AE79BC",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Misc/M_Shadow_GhostGPU"
+			]
+		},
+		{
+			"ShaderMapHash": "2798D3608EC195D75ABFF9F6376E23E8F8AE752F",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_WindZone_Spline"
+			]
+		},
+		{
+			"ShaderMapHash": "42604D63AAD7D8EDB256479C35FFE646A4D6AD00",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Wind/m_WindSplines_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "00C8A2637BEB95BC9FD4BCFDD20426149E5315C6",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/AirGlows/M_Corona_Base"
+			]
+		},
+		{
+			"ShaderMapHash": "C5CA31645EDCBECF5696A19285B76BC804D97CE9",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_WhipHandle"
+			]
+		},
+		{
+			"ShaderMapHash": "AB72E264D4760A57DFE7F3D412D35AADFB641637",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "7754556757CDE3B6339979C9B23F6026BB72D09E",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "9615A56A4FF4DC49C3A4AA8854E206F2FB169B31",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/m_flare_01"
+			]
+		},
+		{
+			"ShaderMapHash": "2C3D1F6B1602E2D560AD8685E5856EF04D252A82",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Armor",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/MIC_Yin_Armor_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "AB221F6EFB6A82E90404FAE1F47CEE60312854E2",
+			"Assets": [
+				"/Niagara/DefaultAssets/DefaultSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "3F6E286E3814329023A974CFC065E99452111CBB",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/DebugEditorMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "8811CF6EBD8BA2179C893DA009326356CD0843E7",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/MI_Yin_CryptGoddess_Hair",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_Hair_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "5B1AFA6E1CD8BF2F29FE763498EA16332A6128CD",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/decals_materials/M_decal_hieroglyphs"
+			]
+		},
+		{
+			"ShaderMapHash": "9C978F6F0988E37839C32812CE27E3A34269EA72",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_body"
+			]
+		},
+		{
+			"ShaderMapHash": "732EA8729664F96C9C9417198893E647CD3DB78B",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Shockwaves/m_SimpleRingSphere"
+			]
+		},
+		{
+			"ShaderMapHash": "D16CBE73293ACD5CECA2C077B00B05A9711F428F",
+			"Assets": [
+				"/Interchange/gltf/M_ClearCoat"
+			]
+		},
+		{
+			"ShaderMapHash": "FD75CF73B377BCB131A84C29DED311A393A36749",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindSplines_Primary_Inst",
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Skins/CryptGoddess/m_WSpln_Primummy_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "70B2EA7465525CA2818955DE0DFE0C3928915D0C",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_SpikeFlare_Random_Color_Flicker"
+			]
+		},
+		{
+			"ShaderMapHash": "53082475065C18BB6B72AD53D7183FCFC22DC387",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindSplines_UltWhipImages_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "A27BEF75EF7AD108F096DA6CDD3B68B5A767BADD",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_Pearls_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "037C357909E3D2F61D7B2D6AFC839B5AC21AE70D",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindSplines_WhipCrack_Inst",
+				"/Game/ParagonYin/FX/Materials/Wind/m_WindSplines_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "B3AD6D7B977D19635A85E2500FEB8BCA25389C75",
+			"Assets": [
+				"/Engine/MapTemplates/Sky/M_Procedural_Sky_MASTER02"
+			]
+		},
+		{
+			"ShaderMapHash": "28E1337E49D42BBCC20845F2B3AA95D08FCC383B",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_body"
+			]
+		},
+		{
+			"ShaderMapHash": "7BF1637F3E801E635FA651CB1C5412C3803470BB",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindCard"
+			]
+		},
+		{
+			"ShaderMapHash": "6B8DCD80DE589A146630168ABAB1DDC65A079E0D",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Skin"
+			]
+		},
+		{
+			"ShaderMapHash": "AB610D81B4D9C72933E30238A4F4C223887F4AFE",
+			"Assets": [
+				"/Game/Characters/Mannequin_UE4/Materials/M_MannequinUE4_Body"
+			]
+		},
+		{
+			"ShaderMapHash": "25DB5B81785F4E36BEB97931D03A3F31C0E767C6",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Smoke/M_ThickSmoke_Omni_Emissive"
+			]
+		},
+		{
+			"ShaderMapHash": "7CD084817A55D806EB59AEEAC0F9A27CE951A2F7",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_body"
+			]
+		},
+		{
+			"ShaderMapHash": "84E2EF814B188381E2DD0D17FB726291639BC193",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Birds/M_Zen_Bird"
+			]
+		},
+		{
+			"ShaderMapHash": "0CAC4C83B841C9B400F0FC4B1DC3F1C0EEF11181",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Translucent"
+			]
+		},
+		{
+			"ShaderMapHash": "40880F8492FC38E8F280C2D6C1D0C3D041B7609C",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Unlit_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "5807D484596125CBE8DD99784F44E605E685AA1A",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_WhipHandle"
+			]
+		},
+		{
+			"ShaderMapHash": "B01FA785C9618D4BD4FF640C31B439A763F4143A",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Skin"
+			]
+		},
+		{
+			"ShaderMapHash": "30F6428827AD6984C99909AF846FB3128FF324DB",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/decals_materials/M_decal_ornament"
+			]
+		},
+		{
+			"ShaderMapHash": "A555B48838E1660CF2F2A15CF3FDA31EF76AEA51",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Decals/ParticleDecal/M_Particle_Decal_Sparkle_DotsInst"
+			]
+		},
+		{
+			"ShaderMapHash": "AB59E089229A65EA2FFC102812115253D6DB6D38",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Shockwaves/M_Shockwave_Soft"
+			]
+		},
+		{
+			"ShaderMapHash": "BE59378A80090E64356CCECADC639D2646F8C8FE",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Armor",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/MIC_Yin_Armor_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "74F8698AD4E8DBC8366D0DD046BA1F6BD3E0B2D4",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/props_materials/M_props"
+			]
+		},
+		{
+			"ShaderMapHash": "3328D38BC2332170F4670AED4D864EFF39D9B0CF",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_metal_B_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "B34BBC8E5A5A32ED7739BD6F3C5771F351839793",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_CoinMaterial_01g"
+			]
+		},
+		{
+			"ShaderMapHash": "E019808F30F44729C528074AA3426939E5A6F6EA",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindSplines_UltWhipImages_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "212FC190F1BAC93CD8A6C0FE94AA4E79FC8333AA",
+			"Assets": [
+				"/Engine/EngineMaterials/EmissiveMeshMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "34872A9206B5EB502B800399400C4EDA9F9CB4F4",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "D19F699260E26F89D9EE1555CF56FEF29E2A3998",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Misc/M_Reticle_Timer_Countdown_2"
+			]
+		},
+		{
+			"ShaderMapHash": "BA9AB0923322E8B43CB5B5C2355ACB7DA69D32C5",
+			"Assets": [
+				"/Interchange/gltf/M_Transmission"
+			]
+		},
+		{
+			"ShaderMapHash": "A0A196935862F6BAD9C6659842BBF87025C6A2E9",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_CoinMaterial_01d",
+				"/Game/AncientTreasures/Materials/Instances/MI_CoinMaterial_01f",
+				"/Game/AncientTreasures/Materials/Instances/MI_Map_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "5C80C2957DA9EEC176F0877F047DC5D7FB3570EC",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WhipCoilMat"
+			]
+		},
+		{
+			"ShaderMapHash": "2669DF959088980613D10154B132888C919862A7",
+			"Assets": [
+				"/Engine/EngineMaterials/FlattenMaterial",
+				"/Engine/EngineMaterials/FlattenMaterial_VT"
+			]
+		},
+		{
+			"ShaderMapHash": "16FBFF9565EB66A7C4AE675B320D440AAF446781",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/M_building_wood"
+			]
+		},
+		{
+			"ShaderMapHash": "47E20A96C555F9CD94BFF12D783F6A7F7F24FCB5",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultLightFunctionMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "FCE63B9662FDD1ECB94172D1E69420FFB4745985",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Sheen_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "E8647F96027B5B858BAB392CC755DFD4C882BFD7",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_Yin_SoftTrail"
+			]
+		},
+		{
+			"ShaderMapHash": "C4C427984CCDD9995ABE91AB8898AE6607C1330E",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Skin"
+			]
+		},
+		{
+			"ShaderMapHash": "7A159D98585BBEC612BE5603ACC6524D691F24E7",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_ArmorAttach_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "8F4AC5997EC2B3EBD84D2E968994BC8AF4D1A3DF",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_WindZone_Spline_NoRefracInst",
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_WindZone_Spline_NoRefracSoft",
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_WindZone_Spline_NoRefracSubtle",
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_WindZone_Spline_NoRefracSubtleUltZone"
+			]
+		},
+		{
+			"ShaderMapHash": "1C63369BA300C38A984C7AF15FDD9343A2D24FEB",
+			"Assets": [
+				"/Game/Characters/Mannequins/Materials/Instances/Manny/MI_Manny_01",
+				"/Game/Characters/Mannequins/Materials/M_Mannequin"
+			]
+		},
+		{
+			"ShaderMapHash": "DFD31F9DA376B62978E86A025A23FE9BA9B6010D",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_ArmorAttach_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "F3FB609ECA543AF843927ECE8177771D824E7C83",
+			"Assets": [
+				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "C922F69E00C6B2E58109F3F64D4014D01EA2D2E4",
+			"Assets": [
+				"/Engine/EditorLandscapeResources/SplineEditorMeshMat"
+			]
+		},
+		{
+			"ShaderMapHash": "A4A73A9F8747473B5ADB1D2BEAEC1C70FB38844A",
+			"Assets": [
+				"/Engine/VREditor/SnapGrid/SnapGridMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "48E411A029002702A99DD48BDE1990F4008CBB51",
+			"Assets": [
+				"/Engine/EngineMaterials/GizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "7A6682A00C3DD4002CDED570069B27C9B635C407",
+			"Assets": [
+				"/Engine/EditorMeshes/ColorCalibrator/M_ClearCoat"
+			]
+		},
+		{
+			"ShaderMapHash": "0A4EBDA0E13719316A1F7D143528C754E7ACF339",
+			"Assets": [
+				"/SpeedTreeImporter/SpeedTree9/SpeedTreeMaster"
+			]
+		},
+		{
+			"ShaderMapHash": "EE0DC7A0272C0FED429A64721B795CCA2101416C",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/decals_materials/M_decal_damage"
+			]
+		},
+		{
+			"ShaderMapHash": "248635A2CAF3B30B00104347DDB062E0D644607E",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_OuterBubbleSegment"
+			]
+		},
+		{
+			"ShaderMapHash": "447F15A3DC9666ABE1629F7570FFF1874CD91C8C",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Flowers/m_Flower_Flipbook"
+			]
+		},
+		{
+			"ShaderMapHash": "2E5578A32B87AAB55991AEC66CB5F39A5590F2F5",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_Coals_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "0DFF4FA494182D2E33BD2C62A4D6DA7AF5000263",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_ClothHang"
+			]
+		},
+		{
+			"ShaderMapHash": "256959A4F2B5BCFD935EEA8F21056B4AF3135CF2",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_upper_body"
+			]
+		},
+		{
+			"ShaderMapHash": "C0CDB3A4C6C407722872C041464E6167ABE3B51A",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Skirt"
+			]
+		},
+		{
+			"ShaderMapHash": "1294B4A5AB4C57F84DE308E7AECB62114B29C79E",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_GlitterFlower"
+			]
+		},
+		{
+			"ShaderMapHash": "C97DEBA5B7FA61F2EA469AABB24B0D72D3877543",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/plants_materials/M_tree"
+			]
+		},
+		{
+			"ShaderMapHash": "83BF2FAACE2A5A03DB2110BD8144EB4A00E5E623",
+			"Assets": [
+				"/ControlRig/Controls/ControlRigXRayMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "5FA134AA44E183403DCD5DF6B27516C0185C0A40",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Cloth",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/MIC_Yin_Cloth_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "047962AA22C9FF381E9CBD47EB3AFB5F0E23A3C4",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/decals_materials/MI_decal_pattern_02_Inst",
+				"/Game/Stylized_Egypt/Materials/decals_materials/MI_decal_pattern_04_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "CC8DAFAAFAFA61CA144675E5147201CD15238082",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Flowers/m_Flower_Flipbook_Translucent_FakeMotionBlur"
+			]
+		},
+		{
+			"ShaderMapHash": "34E609ACED80ADFF62047284949687C9F8B2E864",
+			"Assets": [
+				"/Engine/EditorMaterials/GridMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "10B92DAD9344A0A11CD0F10468D97D89D95E6848",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Decals/ParticleDecal/M_Particle_Decal_Sparkle_LowTile_Inst",
+				"/Game/ParagonYin/FX/Materials/Decals/ParticleDecal/M_Particle_Decal_Sparkle_YinUltInst"
+			]
+		},
+		{
+			"ShaderMapHash": "6AF1A4AE36D75BD3EC07F8B5BAC89E6D33AC6844",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_upper_body"
+			]
+		},
+		{
+			"ShaderMapHash": "42295FAF383E30FD2E3D8FB825EEE1C0BB08AE21",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/landscape_materials/M_landscape_material"
+			]
+		},
+		{
+			"ShaderMapHash": "B0D4ADAF430674915823702144774A6587D16655",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Dangles"
+			]
+		},
+		{
+			"ShaderMapHash": "D0EC1AB074234DEC6CF97891374F35BC2266B59A",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Sheen_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "CFFF48B0E462CFB7E6359E04269E8CB689B2EA6B",
+			"Assets": [
+				"/Engine/VREditor/TransformGizmo/TranslucentTransformGizmoMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "AFBF29B1E0C9B3B6341B8077BBF33DC0A048EB5D",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Unlit_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "12A14FB1D94B2AF39273E04F5B933F551FDB2900",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Head"
+			]
+		},
+		{
+			"ShaderMapHash": "91D6F4B24960D738DF2127F09DF4517F704789CD",
+			"Assets": [
+				"/Engine/EngineMaterials/NaniteHiddenSectionMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "88DC81B340EC135820FEE2BAA78B28EC724CE9BF",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Masters/MM_PP_Sharpen_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "28C719B46BFB8BD1B882064753FA97316FE4E1AE",
+			"Assets": [
+				"/Engine/EngineMaterials/PPM_DefaultCalibrationColor"
+			]
+		},
+		{
+			"ShaderMapHash": "84D9DAB47E81D29362BA9A47F551811B3FE27CEC",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Cloth",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/MIC_Yin_Cloth_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "531D32B8A90E6D3CE54657AE33F64490712A14C9",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Hair/Materials/M_HairSheet_Master2"
+			]
+		},
+		{
+			"ShaderMapHash": "7AC748BA56A31D1F81BBE5166B608024EF2255D9",
+			"Assets": [
+				"/Engine/EditorMeshes/ColorCalibrator/M_ColorGrid"
+			]
+		},
+		{
+			"ShaderMapHash": "221221BB0259AD50055B5A79A3A2BB6C87468462",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_DarkFlare_DistShrink"
+			]
+		},
+		{
+			"ShaderMapHash": "D155AABBDF2A2C9CBE1CFDDF564C5452E6900F11",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Leg"
+			]
+		},
+		{
+			"ShaderMapHash": "B81ED7BB922EA1F7631A09A465284C79319A0E09",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_Gems_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "1858E9BC8D9C2641E3E679924B4F6CE2365BC7F2",
+			"Assets": [
+				"/Paper2D/OpaqueUnlitSpriteMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "44E0EFBEC50D67B390E6D2A955E7DAD4F0994F32",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_ClothHang"
+			]
+		},
+		{
+			"ShaderMapHash": "8B6142BF32F3D1D9B58C7171BFCD930BEDA6547A",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Skirt"
+			]
+		},
+		{
+			"ShaderMapHash": "5C0669BF7A6EDA982CE9358C1984FB3449F3344B",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Misc/M_Spookyface_Spline"
+			]
+		},
+		{
+			"ShaderMapHash": "D7DA2BC0A3C2E1EB0E89811055079727C278BB5E",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Default_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "49A383C070DDA2B42EA3EBE7FC7FCA62B17D33C5",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Masters/MM_Floor_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "6748BCC0DBD0B41CBADECFBD73B1B313518D65AC",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_ClothHang"
+			]
+		},
+		{
+			"ShaderMapHash": "52B702C29046D444E71F66DA2DD02666389756C9",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/m_Yin_WindSprites_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "EAFA48C2D8B8B5C8BFB96A636B5D0BA5E86C0C7B",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Sparks/M_hardSpark_Alpha_GPU_Random"
+			]
+		},
+		{
+			"ShaderMapHash": "0A369CC23CADC79A87BA68ADF5938B8A5254CEA4",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_CoinMaterial_01e",
+				"/Game/AncientTreasures/Materials/Instances/MI_OrnateChest_01a",
+				"/Game/AncientTreasures/Materials/Instances/MI_SandMaterial_01a",
+				"/Game/AncientTreasures/Materials/Instances/MI_SandMaterial_01b",
+				"/Game/AncientTreasures/Materials/Masters/MM_Master_Material_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "0F4BD8C27F62295114FB9ED88BF404E5E9D8FF25",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "665210C600E90A2F3C0648E94549B6BED4E57890",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Head"
+			]
+		},
+		{
+			"ShaderMapHash": "AB1320C62A6A3DD15B627745E71D07794E6DD9FC",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "1A0B48C62E168200AE35720F780D91538AF4F9C6",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Maps/BackGroundAssets/M_AssetPlatform"
+			]
+		},
+		{
+			"ShaderMapHash": "344B6EC6209DB785B578EF18C53A2B872CB1A4FD",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/m_flare_simple_depth"
+			]
+		},
+		{
+			"ShaderMapHash": "5AD63BC7F0830947BEF1A5D939BAE7CDC2F84BDE",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Instances/MI_Chalice_01",
+				"/Game/AncientTreasures/Materials/Instances/MI_Chest_02a",
+				"/Game/AncientTreasures/Materials/Instances/MI_CoinMaterial_01c",
+				"/Game/AncientTreasures/Materials/Instances/MI_GoldBar_01a",
+				"/Game/AncientTreasures/Materials/Instances/MI_Helmet_01a",
+				"/Game/AncientTreasures/Materials/Instances/MI_Shield_01a",
+				"/Game/AncientTreasures/Materials/Instances/MI_Statue_01a",
+				"/Game/AncientTreasures/Materials/Instances/MI_Statue_02a",
+				"/Game/AncientTreasures/Materials/Instances/MI_Torch_01a",
+				"/Game/AncientTreasures/Materials/Instances/MI_WaterPot_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "6E48F2C718D6BC52B0CB6B43CDD479FC6DC8AC86",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultTextMaterialOpaque"
+			]
+		},
+		{
+			"ShaderMapHash": "6CF78EC87ED91AF413D525CBC7C7DDF7725F6443",
+			"Assets": [
+				"/Engine/EditorMeshes/ColorCalibrator/M_GreyBall"
+			]
+		},
+		{
+			"ShaderMapHash": "A11394CD07D6DE0A3F004CF1354DCC829BFA6682",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/M_part_ornament"
+			]
+		},
+		{
+			"ShaderMapHash": "110B72CF298E3BA257BD69E7527CF8474D0D68BB",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultDeferredDecalMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "7FDAE2CF526B7E6BBFC68732853359C03F8A131D",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Decals/ParticleDecal/M_Particle_Decal_Sparkle"
+			]
+		},
+		{
+			"ShaderMapHash": "17D553D15C1373B33AABB7DD6A58D42DED0B1E3E",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_Rope_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "8A4C80D13C819B340EE36F93D5845BD699D6C26F",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/M_Mambo_Insects"
+			]
+		},
+		{
+			"ShaderMapHash": "4313D6D11F64CF5397C1767753CD106543695085",
+			"Assets": [
+				"/Engine/EngineSky/VolumetricClouds/m_SimpleVolumetricCloud"
+			]
+		},
+		{
+			"ShaderMapHash": "9306EDD589EEC5368DA90BFC34E89575A1CD9E2B",
+			"Assets": [
+				"/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale"
+			]
+		},
+		{
+			"ShaderMapHash": "89251BD67CB671B72CE29C35427192AAE39704AD",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Dangles"
+			]
+		},
+		{
+			"ShaderMapHash": "17591BD756D55A5514559677284857A5AFE1920C",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Flowers/m_Flower_Flipbook_Translucent_CPUInst"
+			]
+		},
+		{
+			"ShaderMapHash": "B5648ED7F0457BECDFFE1EE009A8884E7C3218CE",
+			"Assets": [
+				"/Game/Mixamo/Beta_HighLimbsGeoSG3",
+				"/Game/Mixamo/Beta_Joints_MAT1"
+			]
+		},
+		{
+			"ShaderMapHash": "34D93CDAE2D7A39C579C90DEEE4C0B6F2A5D77E0",
+			"Assets": [
+				"/Engine/EditorMeshes/ColorCalibrator/M_ClearCoatBlack"
+			]
+		},
+		{
+			"ShaderMapHash": "179871DAF3EB3881EBFA1A275CB6307226E5EFF1",
+			"Assets": [
+				"/Engine/EngineMaterials/DefaultParticle"
+			]
+		},
+		{
+			"ShaderMapHash": "E0C46BDC639F731B623872C10A7C7BE3AE0E8441",
+			"Assets": [
+				"/Engine/EngineDebugMaterials/M_SimpleUnlitTranslucent"
+			]
+		},
+		{
+			"ShaderMapHash": "150070DD4EA6C04D8BE3C2CA1A3B2E4E41068B2D",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Unlit_Mask_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "245ABFDDC63B92EFD9F834527EC97CC859A063DE",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindZone_Bubble_Ultimate_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "916FBFDEFAC3FED42EE107E8DF43E979436E4B44",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Mouth/Materials/M_Mouth_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "D06706DF6BE76CC1AF87716024FE65B4BFAC3285",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/MI_Yin_CryptGoddess_Hair",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/M_Yin_Hair_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "43E278DF2DFB8D936EB21D983B4FF9EB719E5A05",
+			"Assets": [
+				"/Interchange/gltf/M_Unlit"
+			]
+		},
+		{
+			"ShaderMapHash": "3E7674E1525EA8378062B1D521F7AB4AF76BE924",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Cloth",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/MIC_Yin_Cloth_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "0F21A8E118223F241A86E598CAA77F981CC5A755",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Shockwaves/M_Shockwave_IntersectFresnel_Cheaper"
+			]
+		},
+		{
+			"ShaderMapHash": "DD7BE6E1B9A00BE4BD293FC93B4F48C8A6EB46B0",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Flowers/m_Flower_Flipbook_Trns_CameraFade"
+			]
+		},
+		{
+			"ShaderMapHash": "AD8FFDE1CC45ED7A107A59BB7219FEC15E5C07B0",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/M_Yin_Armor",
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/WindGauntlet/Materials/MIC_Yin_Armor_WindGauntlet"
+			]
+		},
+		{
+			"ShaderMapHash": "E8D671E4F471DEC07B157700C3B607A737438208",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_Flare_Procedural_Noise_Tex_Glow_HollowCenter"
+			]
+		},
+		{
+			"ShaderMapHash": "2268DDE423B2A74DC2898FD043E8AFABBB4CA58D",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Leg"
+			]
+		},
+		{
+			"ShaderMapHash": "E623DEE4ECA1C8A0D4BC229D07812E1F5652A5D3",
+			"Assets": [
+				"/SpeedTreeImporter/SpeedTree9/SpeedTreeBillboardMaster"
+			]
+		},
+		{
+			"ShaderMapHash": "FC5878E509FA6F901EAD45ACA4C65D71AB5BBA7E",
+			"Assets": [
+				"/Engine/EngineMaterials/WorldGridMaterial"
+			]
+		},
+		{
+			"ShaderMapHash": "EF51A9E5F882F642A7FD387E342F66DD00DF7ADD",
+			"Assets": [
+				"/Engine/EngineMaterials/M_InvalidLightmapSettings"
+			]
+		},
+		{
+			"ShaderMapHash": "FA7C09E691F8D5044D767E58E0146C3B52F41427",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/M_Cone_Flare_Master"
+			]
+		},
+		{
+			"ShaderMapHash": "14208FE8A60970EDC91EE84D11A765C59105C072",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_EnergyWisps_Bubble"
+			]
+		},
+		{
+			"ShaderMapHash": "19AC4BE92ACCDE08A84ACFD069EDB1BCD66AF07E",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Default_Opaque_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "20074FE99A0F11CF07AD83BE9A281BA750C1DA55",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Global/Hair/Materials/M_HairSheet_Master2"
+			]
+		},
+		{
+			"ShaderMapHash": "AEF56BE9B4691DC0D57B0B100C49052DA2C16BF9",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/M_base_concrete_WPO",
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/M_brick_WPO"
+			]
+		},
+		{
+			"ShaderMapHash": "69B2A1EA71DA8344EF5100704A02A8BA5AF8FED8",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Skins/CryptGoddess/Materials/M_Yin_CryptGoddess_Gear"
+			]
+		},
+		{
+			"ShaderMapHash": "4D4BB0EA198573FB4CCF5F12A8A5A25BAC8024A9",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Rope"
+			]
+		},
+		{
+			"ShaderMapHash": "1665D8EA6E53D8D5A07725C71290981CAAB6C007",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindSplines_Primary_Inst",
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Skins/CryptGoddess/m_WSpln_Primummy_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "AF204BEBF38464FBED611C7153B8A04EB9D429C7",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Environment/Bugs/Locust/M_Locust_Mesh"
+			]
+		},
+		{
+			"ShaderMapHash": "AB372FECCE12B67A8B051582F4215574495A512A",
+			"Assets": [
+				"/Game/AncientTreasures/Materials/Masters/MM_Fire_01a"
+			]
+		},
+		{
+			"ShaderMapHash": "2BA0A8EC8F561D4BC687A49D6D7F308E9429844D",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/m_WindZone_Bubble_Green"
+			]
+		},
+		{
+			"ShaderMapHash": "065ADEECBAB058968D024E2ABA94803A1F9A85A3",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Misc/M_SpeedTrails"
+			]
+		},
+		{
+			"ShaderMapHash": "CF64E6EC4486A72A4946526ED031DA19EEB13297",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_Sheen_Mask"
+			]
+		},
+		{
+			"ShaderMapHash": "01E2ECECDF27E63CD6C23EA80BEAAC86A8871A0F",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Flares/m_flare_noisy"
+			]
+		},
+		{
+			"ShaderMapHash": "BF80B3EE9FDBDE5496E50E1EAD2687443305724C",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/base_materials/MI_wooden_board_Planar_WPO_01_Inst"
+			]
+		},
+		{
+			"ShaderMapHash": "CB9420EF8BD2D6601541B8DED29E0F4AF7F34E19",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "D82B35F17CB34BA2346F93F60BB6B23F522109EF",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "E675B8F13993B174DE79BEC189F474D2D9CFBDC3",
+			"Assets": [
+				"/Interchange/gltf/M_SpecularGlossiness"
+			]
+		},
+		{
+			"ShaderMapHash": "E67683F4B772943C36BB36951AE1A2908604343C",
+			"Assets": [
+				"/MeshModelingToolset/Materials/M_DynamicMeshComponentVtxColor"
+			]
+		},
+		{
+			"ShaderMapHash": "6AE3A2F46109F9A2835009DA72D32FDC3D55816D",
+			"Assets": [
+				"/Game/Stylized_Egypt/Materials/building_materials/M_pyramid"
+			]
+		},
+		{
+			"ShaderMapHash": "142E3DF68B2AD3F7F1B2FFC690EA3FC7029DED8C",
+			"Assets": [
+				"/Game/ParagonYin/FX/Materials/Heroes/Yin/Abilities/M_Yin_Primary_Trail"
+			]
+		},
+		{
+			"ShaderMapHash": "41F8A9F6594F2E778BC329801D35DE7A83D3801C",
+			"Assets": [
+				"/Game/Characters/Mannequin_UE4/Materials/M_MannequinUE4_ChestLogo"
+			]
+		},
+		{
+			"ShaderMapHash": "314497FDA099E434D099D656FA0C6D1AD8B47691",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_SpecularGlossiness_Blend"
+			]
+		},
+		{
+			"ShaderMapHash": "9C3A95FF877D8990EEE2BD373AF934C2AE35EED9",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Blend_DS"
+			]
+		},
+		{
+			"ShaderMapHash": "38DA96FF9ECA84FF3E6F675EDF4A30953BA5DC99",
+			"Assets": [
+				"/Game/ParagonYin/Characters/Heroes/Yin/Materials/Parent/M_Yin_Rope"
+			]
+		},
+		{
+			"ShaderMapHash": "AB04BEFFDE83086A661B92B3C0B15453CBEF07EE",
+			"Assets": [
+				"/Game/LevelPrototyping/Materials/MI_PrototypeGrid_TopDark"
+			]
+		},
+		{
+			"ShaderMapHash": "9A4ED7FF50934131935DF26F6D88325A37C271EE",
+			"Assets": [
+				"/Interchange/gltf/MaterialInstances/MI_ClearCoat_Opaque_DS"
+			]
+		}
+	]
+}

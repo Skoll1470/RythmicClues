@@ -8,6 +8,7 @@
 
 class UStrangeSideEffectsOverlay;
 class AStrangeSideEffectsCharacter;
+class UEndGameOverlay;
 
 UCLASS()
 class STRANGESIDEEFFECTS_API AStrangeSideEffectsHUD : public AHUD
@@ -34,6 +35,12 @@ public:
 
 	void UpdatePickupCount(int32 NewPickupCount);
 
+	bool HasAllPikcups(int32 PickupCount);
+
+	void SwitchToEndGameOverlay();
+
+	void Pause();
+
 protected:
 
 	virtual void BeginPlay() override;
@@ -51,9 +58,9 @@ private:
 	void TimerCountdown();
 
 	UPROPERTY(EditDefaultsOnly, Category = Overlay)
-	TSubclassOf<UStrangeSideEffectsOverlay> OverlayClass;
+	TSubclassOf<UStrangeSideEffectsOverlay> SideEffectsOverlayClass;
 
-	UStrangeSideEffectsOverlay* Overlay = nullptr;
+	UStrangeSideEffectsOverlay* SideEffectsOverlay = nullptr;
 
 	int32 SmallTime = 30;
 
@@ -78,4 +85,14 @@ private:
 	FTimerHandle THTimer;
 
 	AStrangeSideEffectsCharacter* PlayerCharacter = nullptr;
+
+	UPROPERTY(EditDefaultsOnly, Category = SideEffectsOverlay)
+	TSubclassOf<UEndGameOverlay> EndGameOverlayClass;
+
+	UEndGameOverlay* EndGameOverlay = nullptr;
+
+	UPROPERTY(EditDefaultsOnly, Category = SideEffectsOverlay)
+	TSubclassOf<UUserWidget> PauseOverlayClass;
+
+	UUserWidget* PauseOverlay = nullptr;
 };

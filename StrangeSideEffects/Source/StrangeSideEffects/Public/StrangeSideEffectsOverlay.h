@@ -36,6 +36,10 @@ public:
 
 	void UpdatePickupCount(int32 NewPickupCount);
 
+	void SetMaxPickupCount(int32 MaxCount);
+
+	int32 GetMaxPickupCount();
+
 private:
 
 	UPROPERTY(meta = (BindWidget))
@@ -67,4 +71,6 @@ private:
 
 	UPROPERTY(meta = (BindWidget))
 	UTextBlock* PickupCount = nullptr;
+
+	int32 MaxPickupCount = 0;
 };

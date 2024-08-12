@@ -79,6 +79,9 @@ class AStrangeSideEffectsCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	UInputAction* ClearAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	UInputAction* PauseAction;
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Animation, meta = (AllowPrivateAccess = "true"))
 	UAnimMontage* DrinkingMontage = nullptr;
 
@@ -141,6 +144,8 @@ protected:
 	void Clear(const FInputActionValue& Value);
 
 	void PlayDrinkingMontage();
+
+	void Pause();
 
 protected:
 	// APawn interface
